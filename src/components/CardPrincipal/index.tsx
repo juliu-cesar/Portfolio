@@ -1,6 +1,6 @@
 export default function CardPrincipal() {
   return (
-    <div className="w-2/3 h-[650px] px-12 py-8 bg-gradient-to-bl from-[#b1b1b18b] to-[#51515171] backdrop-blur-xl rounded-xl">
+    <div className="w-[calc(100%-330px)] h-[650px] px-12 py-8 bg-gradient-to-bl from-[#b1b1b18b] to-[#51515171] backdrop-blur-xl rounded-xl">
       <h1 className="w-4/5 text-5xl font-medium leading-[70px]">
         Bem vindo ao meu Portfólio,
       </h1>

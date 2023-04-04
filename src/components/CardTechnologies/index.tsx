@@ -31,7 +31,7 @@ export default function CardTechnologies() {
     })
   }
   return (
-    <div className={`card_technologies transitionAll absolute min-w-[300px] h-[650px] right-0 p-8 overflow-y-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl `}>
+    <div className={`card_technologies transitionAll absolute min-w-[300px] h-[650px] right-2 p-8 overflow-y-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl `}>
       <h2 className="text-4xl">Tecnologias</h2>
       <div className="List h-[500px] overflow-hidden mt-6 ml-4 flex flex-col flex-wrap items-center gap-7 ">
         {allTech.map((tech, index) => {
