@@ -21,8 +21,8 @@ export default function CardPrincipal() {
         <div className="mt-7 flex gap-4">
           <a
             href="https://github.com/juliu-cesar"
-            target="_blank"
-            className="bg-white p-2 rounded-full hover_outline"
+            target="_blank" 
+            className="bg-white p-2 rounded-full outline-[--color1] hover_outline"
           >
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -33,7 +33,7 @@ export default function CardPrincipal() {
           <a
             href="https://www.linkedin.com/in/juliu-cesar/"
             target="_blank"
-            className="bg-white p-2 rounded-full hover_outline"
+            className="bg-white p-2 rounded-full outline-[--color1] hover_outline"
           >
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"

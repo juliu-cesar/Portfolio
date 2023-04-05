@@ -11,8 +11,21 @@
 }
 
 .hover_outline{
-  @apply transition-all duration-150 hover:outline outline-2 outline-[--color1]
+  @apply transition-all duration-150 hover:outline outline-2
 }
 .transitionAll{
   @apply transition-all duration-200 ease-in-out
+}
+.Dflex{
+  @apply flex flex-row items-center
+}
+.DflexS{
+  @apply flex flex-row justify-between items-center gap-2
+}
+.imgFlex{
+  @apply flex justify-center items-center
+}
+
+img{
+  max-width: unset;
 }
