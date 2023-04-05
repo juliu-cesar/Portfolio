@@ -29,10 +29,10 @@ export default function CardTechnologies() {
     })
   }
   return (
-    <div className={`card_technologies transitionAll static md:absolute w-[${showAll}] max-[768px]:w-3/4 max-[640px]:w-full min-w-[300px] h-[600px] md:h-[650px] right-2 p-8 max-[500px]:p-4 m-auto overflow-y-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl`}>
+    <div className={`card_technologies transitionAll static md:absolute w-[${showAll}] max-[768px]:w-3/4 max-[640px]:w-full min-w-[300px] h-[600px] md:h-[650px] right-2 p-8 max-[500px]:p-4 py-8 m-auto overflow-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl`}>
       <h2 className="text-4xl mb-4">Tecnologias</h2>
-      <div className="List w-full h-[500px] overflow-hidden">
-        <div className="md:min-w-[480px] h-full flex flex-row justify-around items-center gap-2">
+      <div className="List w-full h-[500px] overflow-x-auto min-[500px]:overflow-x-hidden">
+        <div className="md:min-w-[480px] max-[500px]:min-w-[450px] h-full flex flex-row justify-around items-center gap-2">
           <div className="Left ml-2">
             {allTech.map((tech, index) => {
               if(index>5)return
