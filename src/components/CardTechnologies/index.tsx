@@ -9,7 +9,6 @@ const allTech = [
   { text: "NextJS", src: "img/svg/techs/nextjs.svg" },
   { text: "Node", src: "img/svg/techs/nodejs.svg" },
   { text: "Git", src: "img/svg/techs/git.svg" },
-  { text: "Tailwind", src: "img/svg/techs/tailwindcss.svg" },
   { text: "Bootstrap", src: "img/svg/techs/bootstrap.svg" },
   { text: "Jquery", src: "img/svg/techs/jquery.svg" },
   { text: "Redux", src: "img/svg/techs/redux.svg" },
@@ -21,15 +20,14 @@ export default function CardTechnologies() {
   function show() {
     const card = document.querySelector(".card_technologies") as HTMLElement
     
-    setShowAll(showAll == "30%" ? "70%" : "30%");
-    
+    setShowAll("70%");    
     window.addEventListener("click", (e)=>{
       if(card.contains(e.target as Node | null))return
       setShowAll("30%")
     })
   }
   return (
-    <div className={`card_technologies transitionAll static md:absolute w-[${showAll}] max-[768px]:w-3/4 max-[640px]:w-full min-w-[300px] h-[600px] md:h-[650px] right-2 p-8 max-[500px]:p-4 py-8 m-auto overflow-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl`}>
+    <div className={`card_technologies static md:absolute w-[${showAll}] min-w-3/4 max-[768px]:w-3/4 max-[640px]:w-full md:min-w-[300px] h-[600px] md:h-[650px] right-2 p-8 max-[500px]:p-4 py-8 m-auto overflow-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl`}>
       <h2 className="text-4xl mb-4">Tecnologias</h2>
       <div className="List w-full h-[500px] overflow-x-auto min-[500px]:overflow-x-hidden">
         <div className="md:min-w-[480px] max-[500px]:min-w-[450px] h-full flex flex-row justify-around items-center gap-2">
