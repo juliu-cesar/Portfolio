@@ -29,7 +29,7 @@ const theme = {
     bg_gradient_1: "#000",
     bg_gradient_2: "#202020",
     bg_container: "#2E2828",
-    bg_card_1: "#B7B7B7",
+    bg_card_1: "#b5b5b56d",
     bg_card_2: "#B0B0B0",
     
     gradient_1: "rgba(225, 225, 225, 0.5)",

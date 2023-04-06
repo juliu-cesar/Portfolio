@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyledCardPrincipal = styled.div`
-  width: 100%;
+    width: calc(70% - 15px);
+    transition: width .2s ease-in-out;
   .container_cardPrincipal {
-    width: 60%;
     min-height: 650px;
     padding: 50px;
     justify-content: space-between;
@@ -83,6 +83,7 @@ export const StyledCardPrincipal = styled.div`
     }
   }
   @media (max-width: 1000px) {
+    width: calc(65% - 15px);
     .Title_principal {
       h1 {
         font-size: 45px;
@@ -102,6 +103,7 @@ export const StyledCardPrincipal = styled.div`
     }
   }
   @media (max-width: 800px) {
+    width: calc(62% - 15px);
     .container_cardPrincipal{
       min-height: 600px;
       padding: 30px;

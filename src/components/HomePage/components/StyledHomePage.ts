@@ -27,19 +27,22 @@ export const StyledHomePage = styled.main`
   }
 
   .Shape1{
+    width: 50%;
     position: absolute;
     top: 0;
     left: 0;
     img{
-      width: 50%;
+      width: 100%;
     }
   }
   .Shape2{
+    width: 60%;
     position: absolute;
-    top: 1200px;
-    right: -200px;
+    top: 450px;
+    right: calc(0px - 30%);
+    transform: rotate(180deg);
     img{
-      width: 40%;
+      width: 100%;
     }
   }
 

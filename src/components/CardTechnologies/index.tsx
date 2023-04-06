@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ItemList from "./components/ItemList";
+import { StyledCardTechnologies } from "./components/StyledCardTechnologies";
 
 const allTech = [
   { text: "React", src: "img/svg/techs/react.svg" },
@@ -18,37 +18,30 @@ export default function CardTechnologies() {
   const [showAll, setShowAll] = useState<string>("30%");
 
   function show() {
-    const card = document.querySelector(".card_technologies") as HTMLElement
-    
-    setShowAll("70%");    
-    window.addEventListener("click", (e)=>{
-      if(card.contains(e.target as Node | null))return
-      setShowAll("30%")
-    })
+    const card = document.querySelector(".card_technologies") as HTMLElement;
+
+    setShowAll("70%");
+    window.addEventListener("click", (e) => {
+      if (card.contains(e.target as Node | null)) return;
+      setShowAll("30%");
+    });
   }
   return (
-    <div>
-      <h2 className="">Tecnologias</h2>
-      <div className="">
-        <div className="">
-          <div className="">
-            {allTech.map((tech, index) => {
-              if(index>5)return
-              return <ItemList src={tech.src} text={tech.text} key={index}/>;
-            })}
-          </div>
-          <span className=""></span>
-          <div className="Right">
-            {allTech.map((tech, index) => {
-              if(index<=5)return
-              return <ItemList src={tech.src} text={tech.text} key={index} reverse={true}/>;
-            })}
-          </div>
+    <StyledCardTechnologies>
+      <div className="container_cardTechnologies">
+        <h2>Tecnologias</h2>
+        <div className="frame_tech flex_col">
+          {allTech.map((tech, index) => {
+            if (index > 5) return;
+            return (
+              <div className="item_tech flex_row">
+                <img src={tech.src} style={{ maxWidth: "80px" }} />{" "}
+                <p className="">{tech.text}</p>
+              </div>
+            );
+          })}
         </div>
-      </div>      
-      <button onClick={show} className="">
-        <img src="img/svg/dots.svg" className="" />
-      </button>
-    </div>
+      </div>
+    </StyledCardTechnologies>
   );
 }

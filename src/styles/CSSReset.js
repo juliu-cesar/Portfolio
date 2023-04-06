@@ -37,6 +37,11 @@ export const CSSReset = createGlobalStyle`
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .flex_row_s{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
   }
   .flex_col{
