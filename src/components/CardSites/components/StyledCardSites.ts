@@ -6,6 +6,7 @@ export const StyledCardSites = styled.div`
     margin-top: 30px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -17,12 +18,20 @@ export const StyledCardSites = styled.div`
     backdrop-filter: blur(10px);
   }
   .card_site:nth-child(1) {
-    width: 58%;
+    width: calc(58% - 16px);
     background-color: ${({ theme }) => theme.color1};
   }
   .card_site:nth-child(2) {
-    width: 42%;
+    width: calc(42% - 15px);
     background-color: ${({ theme }) => theme.bg_card_2};
+  }
+  .card_site:nth-child(3) {
+    width: calc(50% - 15px);
+    background: linear-gradient(90deg, ${({ theme }) => theme.bg_card_3} 0%, ${({ theme }) => theme.gradient_5} 100%);
+  }
+  .card_site:nth-child(4) {
+    width: calc(50% - 15px);
+    background: linear-gradient(225deg, ${({ theme }) => theme.gradient_4} 0%, ${({ theme }) => theme.gradient_5} 60%, ${({ theme }) => theme.gradient_5} 100%);
   }
   .frame_img {
     width: 100%;

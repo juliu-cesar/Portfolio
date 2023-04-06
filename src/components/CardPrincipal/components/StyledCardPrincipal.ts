@@ -20,6 +20,7 @@ export const StyledCardPrincipal = styled.div`
   }
   .Title_principal {
     h1 {
+      max-width: 700px;
       font-size: 55px;
       font-weight: 500;
     }

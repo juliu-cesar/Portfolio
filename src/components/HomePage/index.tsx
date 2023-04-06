@@ -19,6 +19,9 @@ export default function HomePage() {
         <span className="Shape2">
           <img src="img/svg/shape2.svg" />
         </span>
+        <span className="Shape3">
+          <img src="img/svg/shape32.svg" />
+        </span>
       </div>
     </StyledHomePage>
   );
