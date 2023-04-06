@@ -25,7 +25,7 @@ export default function CardTechnologies() {
           {allTech.map((tech, index) => {
             if (index > 5) return;
             return (
-              <div className="item_tech flex_row">
+              <div className="item_tech flex_row" key={index}>
                 <img src={tech.src} style={{ maxWidth: "80px" }} />{" "}
                 <p className="">{tech.text}</p>
               </div>

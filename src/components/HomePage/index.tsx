@@ -1,3 +1,4 @@
+import ToggleTheme from "@/hooks/ToggleTheme";
 import CardPrincipal from "../CardPrincipal";
 import CardSites from "../CardSites";
 import CardTechnologies from "../CardTechnologies";
@@ -6,6 +7,7 @@ import { StyledHomePage } from "./components/StyledHomePage";
 export default function HomePage() {
   return (
     <StyledHomePage>
+      <ToggleTheme />
       <div className="container_home">
           <div className="frame_home">
             <CardPrincipal />

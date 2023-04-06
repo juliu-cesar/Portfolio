@@ -27,9 +27,9 @@ export const CSSReset = createGlobalStyle`
     cursor: pointer;
     text-decoration: none;
     opacity: 1;
-    transition: all .2s;
-    background-color: unset;
     border: unset;
+    background-color: unset;
+    transition: all .2s;
   }
   .icon{
     width: 20px;

@@ -11,13 +11,16 @@ const theme = {
     bg_gradient_1: "#fff",
     bg_gradient_2: "#DCDCDC",
     bg_container: "#E4DCD5",
-    bg_card_1: "#B7B7B7",
-    bg_card_2: "#A8A8A8",
+    bg_card_1: "#a9a9a96c",
+    bg_card_2: "#70707079",
+    bg_card_3: "#49494946",
 
-    gradient_1: "rgba(240, 240, 240, 0.75)",
-    gradient_2: "rgba(209, 209, 209, 0.2)",
-    gradient_3: "#C6C6C6",
-    gradient_4: "#626262",
+    gradient_1: "rgba(225, 225, 225, 0.5)",
+    gradient_2: "rgba(70, 70, 70, 0.4)",
+    gradient_3: "rgba(45, 45, 45, 0.4)",
+
+    gradient_4: "#e5e5e57e",
+    gradient_5: "#8686865b",
     
     gray: "#7e7e7e",
     text_color: "#000",
