@@ -65,20 +65,20 @@ export const StyledCardPrincipal = styled.div`
   @media (max-width: 1300px) {
     .Title_principal {
       h1 {
-        font-size: 50px;
+        font-size: 52px;
       }
       h3 {
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 300;
       }
     }
     .Name_principal {
       h3 {
-        font-size: 25px;
+        font-size: 27px;
         line-height: 24px;
       }
       p {
-        font-size: 18px;
+        font-size: 19px;
       }
     }
   }

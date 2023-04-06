@@ -29,8 +29,8 @@ const theme = {
     bg_gradient_1: "#000",
     bg_gradient_2: "#202020",
     bg_container: "#2E2828",
-    bg_card_1: "#b5b5b56d",
-    bg_card_2: "#B0B0B0",
+    bg_card_1: "#a9a9a96c",
+    bg_card_2: "#70707079",
     
     gradient_1: "rgba(225, 225, 225, 0.5)",
     gradient_2: "rgba(70, 70, 70, 0.4)",

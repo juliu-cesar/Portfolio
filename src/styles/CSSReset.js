@@ -28,6 +28,8 @@ export const CSSReset = createGlobalStyle`
     text-decoration: none;
     opacity: 1;
     transition: all .2s;
+    background-color: unset;
+    border: unset;
   }
   .icon{
     width: 20px;

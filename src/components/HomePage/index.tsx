@@ -10,7 +10,7 @@ export default function HomePage() {
           <div className="frame_home">
             <CardPrincipal />
             <CardTechnologies />
-            {/* <CardSites /> */}
+            <CardSites />
           </div>
 
         <span className="Shape1">

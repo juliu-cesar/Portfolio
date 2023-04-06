@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { StyledCardTechnologies } from "./components/StyledCardTechnologies";
+import { Expand } from "lucide-react";
 
 const allTech = [
   { text: "React", src: "img/svg/techs/react.svg" },
@@ -15,20 +15,11 @@ const allTech = [
 ];
 
 export default function CardTechnologies() {
-  const [showAll, setShowAll] = useState<string>("30%");
 
-  function show() {
-    const card = document.querySelector(".card_technologies") as HTMLElement;
-
-    setShowAll("70%");
-    window.addEventListener("click", (e) => {
-      if (card.contains(e.target as Node | null)) return;
-      setShowAll("30%");
-    });
-  }
   return (
     <StyledCardTechnologies>
       <div className="container_cardTechnologies">
+      <span className="expand_icon align_center"><Expand color="white"></Expand></span>
         <h2>Tecnologias</h2>
         <div className="frame_tech flex_col">
           {allTech.map((tech, index) => {
