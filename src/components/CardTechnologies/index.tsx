@@ -27,17 +27,17 @@ export default function CardTechnologies() {
     })
   }
   return (
-    <div className={`card_technologies static md:absolute w-[${showAll}] min-w-3/4 max-[768px]:w-3/4 max-[640px]:w-full md:min-w-[300px] h-[600px] md:h-[650px] right-2 p-8 max-[500px]:p-4 py-8 m-auto overflow-hidden bg-gradient-to-bl from-[#a9a9a9d5] to-[#737373bf] backdrop-blur-sm rounded-xl`}>
-      <h2 className="text-4xl mb-4">Tecnologias</h2>
-      <div className="List w-full h-[500px] overflow-x-auto min-[500px]:overflow-x-hidden">
-        <div className="md:min-w-[480px] max-[500px]:min-w-[450px] h-full flex flex-row justify-around items-center gap-2">
-          <div className="Left ml-2">
+    <div>
+      <h2 className="">Tecnologias</h2>
+      <div className="">
+        <div className="">
+          <div className="">
             {allTech.map((tech, index) => {
               if(index>5)return
               return <ItemList src={tech.src} text={tech.text} key={index}/>;
             })}
           </div>
-          <span className="w-[4px] h-[450px] bg-white rounded-sm"></span>
+          <span className=""></span>
           <div className="Right">
             {allTech.map((tech, index) => {
               if(index<=5)return
@@ -46,8 +46,8 @@ export default function CardTechnologies() {
           </div>
         </div>
       </div>      
-      <button onClick={show} className="hidden md:block">
-        <img src="img/svg/dots.svg" className="w-12 mt-2 ml-16" />
+      <button onClick={show} className="">
+        <img src="img/svg/dots.svg" className="" />
       </button>
     </div>
   );

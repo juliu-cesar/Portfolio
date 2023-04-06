@@ -8,7 +8,9 @@ export const CSSReset = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-		background-color: ${({ theme }) => theme.body};
+    background: ${({ theme }) => theme.inverted_color};
+    background: linear-gradient(90deg, ${({ theme }) =>
+      theme.bg_gradient_1} 0%, ${({ theme }) => theme.bg_gradient_2} 100%);
 		color: ${({ theme }) => theme.text_color};
     font-family: 'Kanit', sans-serif;
     width: 99vw;
@@ -25,7 +27,7 @@ export const CSSReset = createGlobalStyle`
     cursor: pointer;
     text-decoration: none;
     opacity: 1;
-    transition: all .4s;
+    transition: all .2s;
   }
   .icon{
     width: 20px;

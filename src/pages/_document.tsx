@@ -10,7 +10,7 @@ export default function Document() {
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet"
       />
-      <body className="w-full overflow-x-hidden bg-gradient-to-r from-[#303030] to-[#303540]">
+      <body>
         <Main />
         <NextScript />
       </body>
