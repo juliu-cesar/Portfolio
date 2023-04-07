@@ -27,20 +27,92 @@ export const StyledCardSites = styled.div`
   }
   .card_site:nth-child(3) {
     width: calc(50% - 15px);
-    background: linear-gradient(90deg, ${({ theme }) => theme.bg_card_3} 0%, ${({ theme }) => theme.gradient_5} 100%);
+    background: linear-gradient(
+      90deg,
+      ${({ theme }) => theme.bg_card_3} 0%,
+      ${({ theme }) => theme.gradient_5} 100%
+    );
   }
   .card_site:nth-child(4) {
     width: calc(50% - 15px);
-    background: linear-gradient(225deg, ${({ theme }) => theme.gradient_4} 0%, ${({ theme }) => theme.gradient_5} 60%, ${({ theme }) => theme.gradient_5} 100%);
+    background: linear-gradient(
+      225deg,
+      ${({ theme }) => theme.gradient_4} 0%,
+      ${({ theme }) => theme.gradient_5} 60%,
+      ${({ theme }) => theme.gradient_5} 100%
+    );
   }
   .frame_img {
+    position: relative;
     width: 100%;
     height: 330px;
     border-radius: 10px;
     overflow: hidden;
     img {
       height: 100%;
+
       border-radius: 10px;
+    }
+    :hover .cover_tech {
+      top: 50%;
+    }
+  }
+  .cover_tech {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+    min-height: 150px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #70707070;
+    backdrop-filter: blur(9px);
+    transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    .item_tech {
+      position: relative;
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: white;
+      }
+      p {
+        z-index: 100;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        text-align: center;
+        opacity: 0;
+        font-size: 16px;
+        display: none;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        animation: fade 0.2s ease-in-out forwards;
+        animation-delay: 150ms;
+        :after {
+          content: "";
+          position: absolute;
+          top: -4px;
+          left: calc(50% - 4px);
+          width: 8px;
+          height: 8px;
+          background-color: white;
+          transform: rotate(45deg);
+        }
+      }
+      :hover p {
+        display: block;
+      }
     }
   }
   .frame_text {
@@ -78,7 +150,7 @@ export const StyledCardSites = styled.div`
         outline: 2px solid;
         outline-color: ${({ theme }) => theme.text_color};
       }
-      svg{
+      svg {
         stroke: ${({ theme }) => theme.text_color};
       }
     }
@@ -88,9 +160,17 @@ export const StyledCardSites = styled.div`
       :hover {
         outline-color: ${({ theme }) => theme.inverted_color};
       }
-      svg{
+      svg {
         stroke: ${({ theme }) => theme.inverted_color};
       }
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
   @media (max-width: 1300px) {
@@ -101,6 +181,16 @@ export const StyledCardSites = styled.div`
   @media (max-width: 1000px) {
     .frame_img {
       height: 250px;
+    }
+    .cover_tech {
+      padding: 25px;
+      gap: 17px;
+      .item_tech {
+        position: relative;
+        svg {
+          width: 45px;
+        }        
+      }
     }
     .frame_text {
       h4 {
@@ -130,11 +220,25 @@ export const StyledCardSites = styled.div`
     }
   }
   @media (max-width: 800px) {
-    .card_site{
+    .card_site {
       padding: 20px;
     }
     .frame_img {
       height: 200px;
+    }
+    .cover_tech {
+      padding: 20px;
+      gap: 15px;
+      .item_tech {
+        position: relative;
+        svg {
+          width: 40px;
+        }
+        p{
+          width: 90px;
+          font-size: 14px;
+        }
+      }
     }
     .frame_text {
       h4 {

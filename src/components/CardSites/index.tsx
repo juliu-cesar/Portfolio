@@ -1,10 +1,13 @@
+import HTMLReactParser from "html-react-parser";
 import { StyledCardSites } from "./components/StyledCardSites";
 import { Github, ExternalLink } from "lucide-react";
-import WebSites from "../../json/WebSites.json"
+import WebSites from "../../json/WebSites.json";
+import TechnologiesList from "../../json/TechnologiesList.json";
 
 type TWeb = {
   src: string;
   alt: string;
+  techs: string[];
   title: string;
   text: string;
   linkGitHub: string;
@@ -12,8 +15,8 @@ type TWeb = {
 };
 
 export default function CardSites() {
-  const webSites: TWeb[] = WebSites.webSites
-  
+  const webSites: TWeb[] = WebSites.webSites;
+
   return (
     <StyledCardSites>
       <div className="container_cardSite">
@@ -21,6 +24,17 @@ export default function CardSites() {
           return (
             <div className="card_site flex_col" key={index}>
               <div className="frame_img align_center">
+                <div className="cover_tech">
+                  {site.techs.map((name, key) => {
+                    let tech = TechnologiesList[name as keyof typeof TechnologiesList]
+                    return (
+                      <div className="item_tech" key={key}>
+                        {HTMLReactParser(tech.svg)}
+                        <p>{tech.name}</p>
+                      </div>
+                    );
+                  })}
+                </div>
                 <img
                   src={site.src}
                   alt={site.alt}

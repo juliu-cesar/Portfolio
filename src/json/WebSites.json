@@ -3,6 +3,7 @@
     {
       "src": "img/sites/gpu-store.png",
       "alt": "Pagina inicial site Gpu Store",
+      "techs": ["Firebase", "TypeScript", "React", "NextJS", "antDesign"],
       "title": "Gpu Store",
       "text": "E-commerce de placas de vídeo com carrinho de compras.",
       "linkGitHub": "https://github.com/juliu-cesar/GPU-Store",
@@ -11,6 +12,7 @@
     {
       "src": "img/sites/vscode-landing.png",
       "alt": "Pagina inicial site VS Code landing Page",
+      "techs": [ "React", "TypeScript", "NextJS", "Figma"],
       "title": "Vs Code Landing Page",
       "text": "Pagina de apresentação para a IDE Visual Studio Code.",
       "linkGitHub": "https://github.com/juliu-cesar/VSCode-Landing-page",
@@ -19,6 +21,7 @@
     {
       "src": "img/sites/portfolio.png",
       "alt": "Texto portfolio",
+      "techs": ["React", "TypeScript", "NextJS", "Figma"],
       "title": "Portfolio",
       "text": "Link para o repositório do site atual.",
       "linkGitHub": "https://github.com/juliu-cesar/Portfolio",
@@ -27,6 +30,7 @@
     {
       "src": "img/sites/form-trip.png",
       "alt": "Pagina inicial site Form Trip",
+      "techs": ["antDesign", "TypeScript", "React", "NextJS"],
       "title": "Form Trip",
       "text": "Formulário de cadastro para aluguel de cabanas.",
       "linkGitHub": "https://github.com/juliu-cesar/Form-Trip",

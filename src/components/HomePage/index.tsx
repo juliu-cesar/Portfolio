@@ -6,14 +6,14 @@ import { StyledHomePage } from "./components/StyledHomePage";
 
 export default function HomePage() {
   return (
-    <StyledHomePage>
+    <StyledHomePage> 
       <ToggleTheme />
       <div className="container_home">
-          <div className="frame_home">
-            <CardPrincipal />
-            <CardTechnologies />
-            <CardSites />
-          </div>
+        <div className="frame_home">
+          <CardPrincipal />
+          <CardTechnologies />
+          <CardSites />
+        </div>
 
         <span className="Shape1">
           <img src="img/svg/shape1.svg" />
