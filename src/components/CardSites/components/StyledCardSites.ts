@@ -78,12 +78,18 @@ export const StyledCardSites = styled.div`
         outline: 2px solid;
         outline-color: ${({ theme }) => theme.text_color};
       }
+      svg{
+        stroke: ${({ theme }) => theme.text_color};
+      }
     }
     a:nth-child(2) {
       background-color: ${({ theme }) => theme.text_color};
       color: ${({ theme }) => theme.inverted_color};
       :hover {
         outline-color: ${({ theme }) => theme.inverted_color};
+      }
+      svg{
+        stroke: ${({ theme }) => theme.inverted_color};
       }
     }
   }
