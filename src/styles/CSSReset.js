@@ -13,7 +13,7 @@ export const CSSReset = createGlobalStyle`
       theme.bg_gradient_1} 0%, ${({ theme }) => theme.bg_gradient_2} 100%);
 		color: ${({ theme }) => theme.text_color};
     font-family: 'Kanit', sans-serif;
-    width: 99vw;
+    width: 100vw;
     overflow-x: hidden;
   }
   /* NextJS */

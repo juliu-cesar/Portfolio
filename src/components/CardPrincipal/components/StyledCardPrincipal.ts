@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledCardPrincipal = styled.div`
-    width: calc(70% - 15px);
-    transition: width .2s ease-in-out;
+  width: calc(70% - 15px);
+  transition: width 0.2s ease-in-out;
   .container_cardPrincipal {
     min-height: 650px;
     padding: 50px;
@@ -54,12 +54,17 @@ export const StyledCardPrincipal = styled.div`
       justify-content: center;
       align-items: center;
       background-color: ${({ theme }) => theme.text_color};
-      img {
+      svg {
         width: 65%;
+        fill: ${({ theme }) => theme.inverted_color};
+        display: block;
       }
       :hover {
         outline: 2px solid ${({ theme }) => theme.color1};
       }
+    }
+    a:nth-child(2) svg {
+      width: 58%;
     }
   }
 
@@ -105,7 +110,7 @@ export const StyledCardPrincipal = styled.div`
   }
   @media (max-width: 800px) {
     width: calc(62% - 15px);
-    .container_cardPrincipal{
+    .container_cardPrincipal {
       min-height: 600px;
       padding: 30px;
     }

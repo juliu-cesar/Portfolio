@@ -11,7 +11,7 @@ export const StyledCardTechnologies = styled.div`
     background-color: ${({ theme }) => theme.bg_card_1};
     backdrop-filter: blur(15px);
     :hover .expand_icon svg {
-      stroke: ${({ theme }) => theme.color1};
+      stroke: ${({ theme }) => theme.inverted_color};
     }
   }
   .expand_icon {
@@ -24,10 +24,8 @@ export const StyledCardTechnologies = styled.div`
     border-radius: 50%;
     background-color: #30303030;
     svg {
+      stroke: ${({ theme }) => theme.text_color};
       transition: stroke 0.2s;
-    }
-    :hover svg {
-      stroke: ${({ theme }) => theme.color1};
     }
   }
   h2 {
@@ -42,8 +40,10 @@ export const StyledCardTechnologies = styled.div`
   }
   .item_tech {
     gap: 10px;
-    img {
+    svg {
       width: 65px;
+      min-width: 65px;
+      fill: ${({ theme }) => theme.text_color};
     }
     p {
       font-size: 24px;
@@ -65,8 +65,9 @@ export const StyledCardTechnologies = styled.div`
       height: 500px;
     }
     .item_tech {
-      img {
+      svg {
         width: 55px;
+        min-width: 55px;
       }
       p {
         font-size: 22px;
@@ -95,8 +96,9 @@ export const StyledCardTechnologies = styled.div`
       height: 520px;
     }
     .item_tech {
-      img {
+      svg {
         width: 45px;
+        min-width: 45px;
       }
       p {
         font-size: 22px;
@@ -116,15 +118,6 @@ export const StyledCardTechnologies = styled.div`
     }
     .frame_tech {
       height: 470px;
-    }
-    .item_tech {
-      img {
-        width: 45px;
-      }
-      p {
-        font-size: 22px;
-        font-weight: 300;
-      }
     }
   }
 `;

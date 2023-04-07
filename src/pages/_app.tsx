@@ -39,10 +39,10 @@ const theme = {
     gradient_1: "rgba(225, 225, 225, 0.5)",
     gradient_2: "rgba(70, 70, 70, 0.4)",
     gradient_3: "rgba(45, 45, 45, 0.4)",
-
+    
     gradient_4: "#e5e5e57e",
     gradient_5: "#8686865b",
-
+    
     gray: "#909090",
     text_color: "#fff",
     inverted_color: "#000",

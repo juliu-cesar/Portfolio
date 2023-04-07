@@ -22,7 +22,7 @@ export default function HomePage() {
           <img src="img/svg/shape2.svg" />
         </span>
         <span className="Shape3">
-          <img src="img/svg/shape32.svg" />
+          <img src="img/svg/shape3.svg" />
         </span>
       </div>
     </StyledHomePage>

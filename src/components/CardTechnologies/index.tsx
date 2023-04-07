@@ -1,20 +1,10 @@
+import HTMLReactParser from "html-react-parser";
 import { StyledCardTechnologies } from "./components/StyledCardTechnologies";
 import { Expand } from "lucide-react";
-
-const allTech = [
-  { text: "React", src: "img/svg/techs/react.svg" },
-  { text: "TypeScript", src: "img/svg/techs/TypeScript.svg" },
-  { text: "HTML5", src: "img/svg/techs/html5.svg" },
-  { text: "CSS3", src: "img/svg/techs/css3.svg" },
-  { text: "NextJS", src: "img/svg/techs/nextjs.svg" },
-  { text: "Node", src: "img/svg/techs/nodejs.svg" },
-  { text: "Git", src: "img/svg/techs/git.svg" },
-  { text: "Bootstrap", src: "img/svg/techs/bootstrap.svg" },
-  { text: "Jquery", src: "img/svg/techs/jquery.svg" },
-  { text: "Redux", src: "img/svg/techs/redux.svg" },
-];
+import TechnologiesList from "../../json/TechnologiesList.json"
 
 export default function CardTechnologies() {
+  const allTech = TechnologiesList.allTech;
 
   return (
     <StyledCardTechnologies>
@@ -26,8 +16,8 @@ export default function CardTechnologies() {
             if (index > 5) return;
             return (
               <div className="item_tech flex_row" key={index}>
-                <img src={tech.src} style={{ maxWidth: "80px" }} />{" "}
-                <p className="">{tech.text}</p>
+                {HTMLReactParser(tech.svg)}
+                <p className="">{tech.name}</p>
               </div>
             );
           })}
