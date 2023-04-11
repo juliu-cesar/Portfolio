@@ -1,8 +1,8 @@
 import HTMLReactParser from "html-react-parser";
 import { StyledCardSites } from "./components/StyledCardSites";
 import { Github, ExternalLink } from "lucide-react";
-import WebSites from "../../json/WebSites.json";
-import TechnologiesList from "../../json/TechnologiesList.json";
+import WebSites from "../../../../json/WebSites.json";
+import TechnologiesList from "../../../../json/TechnologiesList.json";
 
 type TWeb = {
   src: string;

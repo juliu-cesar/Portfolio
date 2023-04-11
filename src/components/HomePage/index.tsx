@@ -1,14 +1,15 @@
 import ToggleTheme from "@/hooks/ToggleTheme";
-import CardPrincipal from "../CardPrincipal";
-import CardSites from "../CardSites";
-import CardTechnologies from "../CardTechnologies";
 import { StyledHomePage } from "./components/StyledHomePage";
+import ContainerPrincipal from "../ContainerPrincipal";
+import CardPrincipal from "./components/CardPrincipal";
+import CardTechnologies from "./components/CardTechnologies";
+import CardSites from "./components/CardSites";
 
 export default function HomePage() {
   return (
     <StyledHomePage> 
       <ToggleTheme />
-      <div className="container_home">
+      <ContainerPrincipal>
         <div className="frame_home">
           <CardPrincipal />
           <CardTechnologies />
@@ -24,7 +25,7 @@ export default function HomePage() {
         <span className="Shape3">
           <img src="img/svg/shape3.svg" />
         </span>
-      </div>
+      </ContainerPrincipal>
     </StyledHomePage>
   );
 }

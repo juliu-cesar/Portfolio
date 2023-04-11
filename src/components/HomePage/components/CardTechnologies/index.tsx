@@ -1,13 +1,15 @@
 import HTMLReactParser from "html-react-parser";
 import { StyledCardTechnologies } from "./components/StyledCardTechnologies";
 import { Expand } from "lucide-react";
-import TechnologiesList from "../../json/TechnologiesList.json";
+import TechnologiesList from "../../../../json/TechnologiesList.json";
+import Link from "next/link";
 
 export default function CardTechnologies() {
   const allTech = ["React", "TypeScript", "HTML5", "CSS3", "NextJS", "Node"];
 
   return (
     <StyledCardTechnologies>
+      <Link href={"tecnologias"} >
       <div className="container_cardTechnologies">
         <span className="expand_icon align_center">
           <Expand color="white"></Expand>
@@ -25,6 +27,7 @@ export default function CardTechnologies() {
           })}
         </div>
       </div>
+          </Link>
     </StyledCardTechnologies>
   );
 }

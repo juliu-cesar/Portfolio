@@ -2,18 +2,6 @@ import styled from "styled-components";
 
 export const StyledHomePage = styled.main`
   width: 100%;
-  .container_home {
-    position: relative;
-    width: 95%;
-    max-width: 1300px;
-    padding: 50px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 40px;
-    overflow: hidden;
-    background-color: ${({ theme }) => theme.bg_container};
-  }
   .frame_home {
     z-index: 10;
     position: relative;

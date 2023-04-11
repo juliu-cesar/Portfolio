@@ -81,7 +81,7 @@ const StyledToggle = styled.button`
 
   @keyframes sun {
     0% {
-      transform: scale(1.13);
+      transform: scale(1.15);
     }
     100% {
       transform: scale(1);

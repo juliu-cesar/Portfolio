@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyledCardTechnologies = styled.div`
   width: calc(30% - 15px);
   transition: width 0.2s ease-in-out;
+  a{
+    color: ${({ theme }) => theme.text_color};
+  }
   .container_cardTechnologies {
     cursor: pointer;
     min-height: 650px;
