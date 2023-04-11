@@ -17,6 +17,7 @@ export const StyledCardPrincipal = styled.div`
       ${({ theme }) => theme.gradient_3} 100%
     );
     backdrop-filter: blur(30px);
+    transition: color .2s;
   }
   .Title_principal {
     h1 {

@@ -7,7 +7,7 @@ import CardSites from "./components/CardSites";
 
 export default function HomePage() {
   return (
-    <StyledHomePage> 
+    <StyledHomePage>
       <ToggleTheme />
       <ContainerPrincipal>
         <div className="frame_home">
@@ -16,13 +16,13 @@ export default function HomePage() {
           <CardSites />
         </div>
 
-        <span className="Shape1">
+        <span id="shape_1" className="Shape">
           <img src="img/svg/shape1.svg" />
         </span>
-        <span className="Shape2">
+        <span id="shape_2" className="Shape">
           <img src="img/svg/shape2.svg" />
         </span>
-        <span className="Shape3">
+        <span id="shape_3" className="Shape">
           <img src="img/svg/shape3.svg" />
         </span>
       </ContainerPrincipal>

@@ -14,61 +14,39 @@ export const StyledHomePage = styled.main`
     align-items: center;
   }
 
-  .Shape1 {
-    width: 50%;
+  .Shape {
     position: absolute;
-    top: 0;
-    left: 0;
     img {
       width: 100%;
     }
   }
-  .Shape2 {
+  #shape_1 {
+    width: 50%;
+    top: 0;
+    left: 0;
+  }
+  #shape_2 {
     width: 70%;
-    position: absolute;
     top: 500px;
     right: calc(0px - 40%);
     transform: rotate(180deg);
-    img {
-      width: 100%;
-    }
   }
-  .Shape3 {
+  #shape_3 {
     width: 60%;
-    position: absolute;
     bottom: calc(0px - 10%);
-    /* bottom: -70px; */
     left: calc(0px - 15%);
     transform: rotate(-10deg);
-    img {
-      width: 100%;
-    }
   }
 
-  @media (max-width: 1400px) {
-    .container_home {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-  }
   @media (max-width: 1000px) {
-    .container_home {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-    .Shape2 {
+    #shape_2 {
       width: 80%;
       top: 450px;
       right: calc(0px - 45%);
     }
   }
   @media (max-width: 800px) {
-    .container_home {
-      padding: 30px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    .Shape1 {
+    #shape_1 {
       width: 60%;
     }
   }

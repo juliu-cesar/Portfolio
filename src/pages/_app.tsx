@@ -15,12 +15,16 @@ const theme = {
     bg_card_2: "#98989866",
     bg_card_3: "#4949492d",
 
-    gradient_1: "rgba(249, 249, 249, 0.526)",
-    gradient_2: "rgba(151, 151, 151, 0.397)",
-    gradient_3: "rgba(110, 110, 110, 0.182)",
+    gradient_1: "#f9f9f986",
+    gradient_2: "#97979765",
+    gradient_3: "#6e6e6e2e",
 
     gradient_4: "#e5e5e57e",
     gradient_5: "#9a9a9a5b",
+
+    gradient_6: "#c4c4c44a",
+    gradient_7: "#b3b3b391",
+    gradient_8: "#ffffff9f",
     
     gray: "#7e7e7e",
     text_color: "#000",
@@ -36,12 +40,16 @@ const theme = {
     bg_card_2: "#70707079",
     bg_card_3: "#49494946",
     
-    gradient_1: "rgba(225, 225, 225, 0.5)",
-    gradient_2: "rgba(70, 70, 70, 0.4)",
-    gradient_3: "rgba(45, 45, 45, 0.4)",
+    gradient_1: "#e1e1e17f",
+    gradient_2: "#46464666",
+    gradient_3: "#ffffff66",
     
     gradient_4: "#e5e5e57e",
     gradient_5: "#8686865b",
+
+    gradient_6: "#8484843d",
+    gradient_7: "#9393936c",
+    gradient_8: "#d6d6d680",
     
     gray: "#909090",
     text_color: "#fff",

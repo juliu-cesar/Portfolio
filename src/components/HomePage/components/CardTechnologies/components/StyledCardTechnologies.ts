@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledCardTechnologies = styled.div`
   width: calc(30% - 15px);
   transition: width 0.2s ease-in-out;
-  a{
+  a {
     color: ${({ theme }) => theme.text_color};
   }
   .container_cardTechnologies {
@@ -47,10 +47,21 @@ export const StyledCardTechnologies = styled.div`
       width: 65px;
       min-width: 65px;
       fill: ${({ theme }) => theme.text_color};
+      transition: fill 0.2s;
     }
     p {
       font-size: 24px;
       font-weight: 400;
+    }
+  }
+  .dots {
+    width: 60px;
+    height: 30px;
+    margin-left: 25px;
+    display: block;
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -77,16 +88,20 @@ export const StyledCardTechnologies = styled.div`
         font-weight: 400;
       }
     }
+    .dots {
+      width: 55px;
+      height: 30px;
+    }
   }
   @media (max-width: 1000px) {
     width: calc(35% - 15px);
     .container_cardTechnologies {
       padding: 25px;
     }
-    .expand_icon{
+    .expand_icon {
       width: 35px;
       height: 35px;
-      svg{
+      svg {
         width: 20px;
       }
     }
@@ -108,6 +123,10 @@ export const StyledCardTechnologies = styled.div`
         font-weight: 300;
       }
     }
+    .dots {
+      width: 50px;
+      height: 25px;
+    }
   }
   @media (max-width: 800px) {
     width: calc(38% - 15px);
@@ -121,6 +140,10 @@ export const StyledCardTechnologies = styled.div`
     }
     .frame_tech {
       height: 470px;
+    }
+    .dots {
+      width: 45px;
+      height: 20px;
     }
   }
 `;
