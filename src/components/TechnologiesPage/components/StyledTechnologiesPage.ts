@@ -41,8 +41,8 @@ export const StyledTechnologiesPage = styled.div`
       backdrop-filter: blur(15px);
       h2 {
         margin-left: 40px;
-        font-size: 35px;
-        font-weight: 400;
+        font-size: 40px;
+        font-weight: 500;
         line-height: 35px;
       }
     }

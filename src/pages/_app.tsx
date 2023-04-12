@@ -16,8 +16,8 @@ const theme = {
     bg_card_3: "#4949492d",
 
     gradient_1: "#f9f9f986",
-    gradient_2: "#97979765",
-    gradient_3: "#6e6e6e2e",
+    gradient_2: "#97979750",
+    gradient_3: "#6e6e6e1a",
 
     gradient_4: "#e5e5e57e",
     gradient_5: "#9a9a9a5b",
@@ -38,11 +38,11 @@ const theme = {
     bg_container: "#2E2828",
     bg_card_1: "#a9a9a96c",
     bg_card_2: "#70707079",
-    bg_card_3: "#49494946",
+    bg_card_3: "#4d4d4d46",
     
     gradient_1: "#e1e1e17f",
-    gradient_2: "#46464666",
-    gradient_3: "#ffffff66",
+    gradient_2: "#4f4f4f66",
+    gradient_3: "#4a4a4a4f",
     
     gradient_4: "#e5e5e57e",
     gradient_5: "#8686865b",
