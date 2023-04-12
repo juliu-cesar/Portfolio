@@ -67,10 +67,10 @@ export const StyledTechnologiesPage = styled.div`
     transform: rotate(180deg) translate(50%, 40%);
   }
   #tech_shape_3 {
-    width: 60%;
+    width: 55%;
     bottom: 0;
     right: 0;
-    transform: rotate(-60deg) translate(30%, 50%);
+    transform: rotate(90deg) translate(30%, -25%);
   }
 
   @media (max-width: 1000px) {
@@ -92,6 +92,15 @@ export const StyledTechnologiesPage = styled.div`
           font-weight: 400;
         }
       }
+    }
+    #tech_shape_1 {
+      width: 70%;
+    }
+    #tech_shape_2 {
+      width: 70%;
+    }
+    #tech_shape_3 {
+      width: 60%;
     }
   }
   @media (max-width: 800px) {

@@ -62,6 +62,8 @@ export const StyledCardTechnologies = styled.div`
     svg {
       width: 100%;
       height: 100%;
+      fill: ${({ theme }) => theme.text_color};
+      transition: fill 0.2s;
     }
   }
 

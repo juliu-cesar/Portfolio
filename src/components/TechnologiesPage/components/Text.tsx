@@ -15,7 +15,7 @@ const StyledText = styled.p`
   }
   @media (max-width: 800px) {
     margin-left: 15px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 18px;
   }

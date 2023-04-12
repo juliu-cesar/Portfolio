@@ -5,6 +5,8 @@ import { ChevronLeft } from "lucide-react";
 import TechPrincipal from "./components/TechPrincipal";
 import { StyledTechnologiesPage } from "./components/StyledTechnologiesPage";
 import TechTrio from "./components/TechTrio";
+import Tech_3 from "./components/Tech_3";
+import Tech_4 from "./components/Tech_4";
 
 export default function TechnologiesPage() {
   return (
@@ -23,8 +25,8 @@ export default function TechnologiesPage() {
           </header>
           <TechPrincipal />
           <TechTrio />
-          <div className="frame_grid2"></div>
-          <div className="frame_grid3"></div>
+          <Tech_3 />
+          <Tech_4 />
         </div>
 
       <span id="tech_shape_1" className="Shape">
@@ -34,7 +36,7 @@ export default function TechnologiesPage() {
         <img src="img/svg/tech_Shape2.svg" />
       </span>
       <span id="tech_shape_3" className="Shape">
-        <img src="img/svg/tech_Shape3.svg" />
+        <img src="img/svg/Shape3.svg" />
       </span>
       </ContainerPrincipal>
     </StyledTechnologiesPage>
