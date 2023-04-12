@@ -14,17 +14,19 @@ export const StyledTech_3 = styled.div`
   gap: 30px;
   .card:first-child {
     grid-area: node;
+    background: linear-gradient(35deg, ${({ theme }) => theme.gradient_6} 0%, ${({ theme }) => theme.gradient_5} 100%);
   }
   .card:nth-child(2){
     grid-area: mongoFire;
+    background-color: ${({ theme }) => theme.bg_card_2};
   }
   .card:nth-child(3){
     grid-area: git;
+    background-color: ${({ theme }) => theme.gradient_5};
   }
 
   .card {
     width: 100%;
-    /* height: 100%; */
     padding: 20px;
     display: flex;
     flex-direction: column;

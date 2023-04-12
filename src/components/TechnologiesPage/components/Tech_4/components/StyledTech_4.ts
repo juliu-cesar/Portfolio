@@ -10,15 +10,12 @@ export const StyledTech_4 = styled.div`
   gap: 30px;
 
 
-  /* .card:first-child {
-    grid-area: javascript;
-  }
-  .card:nth-child(2){
-    grid-area: html;
+  .card:first-child {
+    background: linear-gradient(35deg, ${({ theme }) => theme.gradient_6} 0%, ${({ theme }) => theme.gradient_5} 100%);
   }
   .card:nth-child(3){
-    grid-area: css;
-  } */
+    background: linear-gradient(140deg, ${({ theme }) => theme.gradient_5} 0%, ${({ theme }) => theme.gradient_6} 100%);
+  }
 
   .card {
     width: 100%;

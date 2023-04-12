@@ -5,20 +5,34 @@ export const StyledTechTrio = styled.div`
   margin: 30px 0;
 
   display: grid;
-  grid-template-areas: 
-  "javascript javascript"
-  "html css"
-  ;
+  grid-template-areas:
+    "javascript javascript"
+    "html css";
   align-items: center;
   gap: 30px;
   .card:first-child {
     grid-area: javascript;
+    background: linear-gradient(
+      35deg,
+      ${({ theme }) => theme.bg_card_1} 0%,
+      ${({ theme }) => theme.gradient_5} 100%
+    );
   }
-  .card:nth-child(2){
+  .card:nth-child(2) {
     grid-area: html;
+    background: linear-gradient(
+      90deg,
+      ${({ theme }) => theme.bg_card_1} 0%,
+      ${({ theme }) => theme.gradient_6} 100%
+    );
   }
-  .card:nth-child(3){
+  .card:nth-child(3) {
     grid-area: css;
+    background: linear-gradient(
+      90deg,
+      ${({ theme }) => theme.gradient_5} 0%,
+      ${({ theme }) => theme.gradient_6} 100%
+    );
   }
 
   .card {
