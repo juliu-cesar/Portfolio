@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import TechPrincipal from "./components/TechPrincipal";
 import { StyledTechnologiesPage } from "./components/StyledTechnologiesPage";
+import TechTrio from "./components/TechTrio";
 
 export default function TechnologiesPage() {
   return (
@@ -21,7 +22,7 @@ export default function TechnologiesPage() {
             </div>
           </header>
           <TechPrincipal />
-          <div className="frame_dragDrop"></div>
+          <TechTrio />
           <div className="frame_grid2"></div>
           <div className="frame_grid3"></div>
         </div>

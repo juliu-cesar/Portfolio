@@ -1,14 +1,14 @@
-import { StyledTechPrincipal } from "./components/StyledTechPrincipal";
+import { StyledTechTrio } from "./components/StyledTechTrio";
 import TechPage from "../../../../json/TechPage.json";
 import HTMLReactParser from "html-react-parser";
 import IconAndText from "../IconAndText";
 import Text from "../Text";
 
-export default function TechPrincipal() {
-  const techList = ["React", "TypeScript", "NextJS", "StyledComponents"];
+export default function TechTrio() {
+  const techList = ["JavaScript", "HTML5", "CSS3"];
 
   return (
-    <StyledTechPrincipal>
+    <StyledTechTrio>
       {techList.map((name, index) => {
         let tech = TechPage[name as keyof typeof TechPage];
         return (
@@ -21,6 +21,6 @@ export default function TechPrincipal() {
           </div>
         );
       })}
-    </StyledTechPrincipal>
+    </StyledTechTrio>
   );
 }
