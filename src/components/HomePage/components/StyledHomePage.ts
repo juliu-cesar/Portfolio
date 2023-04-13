@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHomePage = styled.main`
   width: 100%;
-  .Home{
+  .Home {
     position: relative;
     z-index: 10;
   }
@@ -29,15 +29,15 @@ export const StyledHomePage = styled.main`
   }
   #shape_2 {
     width: 70%;
-    top: 500px;
-    right: calc(0px - 40%);
-    transform: rotate(180deg);
+    top: 50%;
+    right: 0;
+    transform: rotate(180deg) translate(-60%, 40%);
   }
   #shape_3 {
     width: 60%;
-    bottom: calc(0px - 10%);
-    left: calc(0px - 15%);
-    transform: rotate(-10deg);
+    bottom: 0;
+    left: 0;
+    transform: rotate(-10deg) translate(-15%, 20%);
   }
 
   @media (max-width: 1000px) {
@@ -45,9 +45,6 @@ export const StyledHomePage = styled.main`
       grid-template-columns: calc(65% - 15px) calc(35% - 15px);
     }
     #shape_2 {
-      width: 80%;
-      top: 450px;
-      right: calc(0px - 45%);
     }
   }
   @media (max-width: 800px) {
@@ -58,25 +55,52 @@ export const StyledHomePage = styled.main`
     #shape_1 {
       width: 60%;
     }
-  }
-  @media (max-width: 500px) {
-    .frame_principalAndTech{
-      gap: 25px;
+    #shape_2 {
+      width: 80%;
     }
   }
   @media (max-width: 700px) {
-    .frame_principalAndTech{
+    .frame_principalAndTech {
       grid-template-columns: 100%;
       grid-template-rows: auto 320px;
     }
+    #shape_1 {
+      width: 70%;
+    }
+    #shape_2 {
+      width: 100%;
+    }
+    #shape_3 {
+      width: 70%;
+    }
+  }
+  @media (max-width: 500px) {
+    .frame_principalAndTech {
+      gap: 25px;
+    }
+    #shape_1 {
+      width: 80%;
+    }
+    #shape_2 {
+      width: 110%;
+    }
+    #shape_3 {
+      width: 80%;
+    }
   }
   @media (max-width: 400px) {
-    .frame_principalAndTech{
+    .frame_principalAndTech {
       gap: 15px;
     }
-    .frame_principalAndTech{
+    .frame_principalAndTech {
       grid-template-columns: 100%;
       grid-template-rows: auto 390px;
+    }
+    #shape_1 {
+      width: 90%;
+    }
+    #shape_2 {
+      width: 120%;
     }
   }
 `;

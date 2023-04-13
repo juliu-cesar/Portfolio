@@ -6,49 +6,8 @@ export const StyledTechnologiesPage = styled.div`
     position: relative;
     z-index: 10;
   }
-  header {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: center;
-    gap: 30px;
-    transition: color 0.2s;
-    a {
-      height: 80px;
-      border-radius: 10px;
-      background-color: ${({ theme }) => theme.bg_card_1};
-      color: ${({ theme }) => theme.text_color};
-      backdrop-filter: blur(10px);
-      svg {
-        height: 50px;
-      }
-      p {
-        margin-right: 20px;
-        font-size: 27px;
-        font-weight: 400;
-      }
-    }
-    div {
-      height: 80px;
-      display: flex;
-      align-items: center;
-      border-radius: 10px;
-      background: linear-gradient(
-        65deg,
-        ${({ theme }) => theme.gradient_6} 0%,
-        ${({ theme }) => theme.gradient_7} 65%,
-        ${({ theme }) => theme.gradient_8} 100%
-      );
-      backdrop-filter: blur(15px);
-      h2 {
-        margin-left: 40px;
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 35px;
-      }
-    }
-  }
 
-  .Shape {
+  .tech_shape {
     position: absolute;
     img {
       width: 100%;
@@ -74,25 +33,6 @@ export const StyledTechnologiesPage = styled.div`
   }
 
   @media (max-width: 1000px) {
-    header {
-      grid-template-columns: 1fr 4fr;
-      gap: 25px;
-      a {
-        height: 75px;
-        p {
-          margin-right: 20px;
-          font-size: 25px;
-        }
-      }
-      div {
-        height: 75px;
-        h2 {
-          margin-left: 40px;
-          font-size: 32px;
-          font-weight: 400;
-        }
-      }
-    }
     #tech_shape_1 {
       width: 70%;
     }
@@ -104,23 +44,47 @@ export const StyledTechnologiesPage = styled.div`
     }
   }
   @media (max-width: 800px) {
-    header {
-      gap: 20px;
-      a {
-        height: 70px;
-        p {
-          margin-right: 20px;
-          font-size: 22px;
-          font-weight: 400;
-        }
-      }
-      div {
-        height: 70px;
-        h2 {
-          margin-left: 40px;
-          font-size: 30px;
-        }
-      }
+    #tech_shape_1 {
+      width: 75%;
     }
+    #tech_shape_2 {
+      width: 75%;
+    }
+    #tech_shape_3 {
+      width: 65%;
+    }    
+  }
+  @media (max-width: 700px) {
+    #tech_shape_1 {
+      width: 80%;
+    }
+    #tech_shape_2 {
+      width: 80%;
+    }
+    #tech_shape_3 {
+      width: 70%;
+    }    
+  }
+  @media (max-width: 500px) {
+    #tech_shape_1 {
+      width: 90%;
+    }
+    #tech_shape_2 {
+      width: 90%;
+    }
+    #tech_shape_3 {
+      width: 80%;
+    }    
+  }
+  @media (max-width: 400px) {
+    #tech_shape_1 {
+      width: 110%;
+    }
+    #tech_shape_2 {
+      width: 100%;
+    }
+    #tech_shape_3 {
+      width: 90%;
+    }    
   }
 `;

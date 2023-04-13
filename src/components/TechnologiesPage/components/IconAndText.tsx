@@ -51,6 +51,41 @@ const StyledIconAndText = styled.div`
       font-size: 27px;
     }
   }
+  @media (max-width: 700px) {
+    gap: 15px;
+    div {
+      width: 45px;
+      min-width: 45px;
+      height: 45px;
+      min-height: 45px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 500px) {
+    gap: 15px;
+    div {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      min-height: 40px;
+    }
+    h3 {
+      font-size: 23px;
+    }
+  }
+  @media (max-width: 400px) {
+    div {
+      width: 38px;
+      min-width: 38px;
+      height: 38px;
+      min-height: 38px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
 `;
 
 export default function IconAndText({

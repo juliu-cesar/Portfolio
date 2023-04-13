@@ -3,6 +3,7 @@ import TechPage from "../../../../json/TechPage.json";
 import IconAndText from "../IconAndText";
 import Text from "../Text";
 import HTMLReactParser from "html-react-parser";
+import CardTP from "../CardTP";
 
 type techInfo = {
   name: string;
@@ -17,7 +18,7 @@ export default function Tech_3() {
   }
   return (
     <StyledTech_3>
-      <div className={"card "}>
+      <CardTP>
         <IconAndText>
           <div className="align_center">
             {HTMLReactParser(getTech(techList[0]).svg)}
@@ -25,26 +26,30 @@ export default function Tech_3() {
           <h3>{getTech(techList[0]).name}</h3>
         </IconAndText>
         <Text>{getTech(techList[0]).text}</Text>
-      </div>
+      </CardTP>
 
-      <div className={"card colCard"}>
-        <IconAndText>
-          <div className="align_center">
-            {HTMLReactParser(getTech(techList[2]).svg)}
-          </div>
-          <h3>{getTech(techList[2]).name}</h3>
-        </IconAndText>
-        <Text>{getTech(techList[2]).text}</Text>
-        <IconAndText>
-          <div className="align_center">
-            {HTMLReactParser(getTech(techList[3]).svg)}
-          </div>
-          <h3>{getTech(techList[3]).name}</h3>
-        </IconAndText>
-        <Text>{getTech(techList[3]).text}</Text>
-      </div>
+      <CardTP>
+        <div className="mongo flex_col">
+          <IconAndText>
+            <div className="align_center">
+              {HTMLReactParser(getTech(techList[2]).svg)}
+            </div>
+            <h3>{getTech(techList[2]).name}</h3>
+          </IconAndText>
+          <Text>{getTech(techList[2]).text}</Text>
+        </div>
+        <div className="firebase flex_col">
+          <IconAndText>
+            <div className="align_center">
+              {HTMLReactParser(getTech(techList[3]).svg)}
+            </div>
+            <h3>{getTech(techList[3]).name}</h3>
+          </IconAndText>
+          <Text>{getTech(techList[3]).text}</Text>
+        </div>
+      </CardTP>
 
-      <div className={"card "}>
+      <CardTP>
         <IconAndText>
           <div className="align_center">
             {HTMLReactParser(getTech(techList[1]).svg)}
@@ -52,7 +57,7 @@ export default function Tech_3() {
           <h3>{getTech(techList[1]).name}</h3>
         </IconAndText>
         <Text>{getTech(techList[1]).text}</Text>
-      </div>
+      </CardTP>
     </StyledTech_3>
   );
 }

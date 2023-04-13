@@ -16,8 +16,21 @@ const StyledText = styled.p`
   @media (max-width: 800px) {
     margin-left: 15px;
     font-size: 14px;
-    font-weight: 300;
     line-height: 18px;
+  }
+  @media (max-width: 700px) {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media (max-width: 500px) {
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  @media (max-width: 400px) {
+    font-size: 12px;
+    line-height: 14px;
   }
 `;
 

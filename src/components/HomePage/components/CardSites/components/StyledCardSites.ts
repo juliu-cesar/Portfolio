@@ -257,6 +257,9 @@ export const StyledCardSites = styled.div`
       flex-direction: column;
       align-items: center;
     }
+    .card_site:nth-child(1) {
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    }
     .card_site {
       max-width: 500px;
       padding: 25px;
