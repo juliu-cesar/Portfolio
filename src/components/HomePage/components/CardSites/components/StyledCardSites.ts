@@ -51,7 +51,9 @@ export const StyledCardSites = styled.div`
     overflow: hidden;
     img {
       height: 100%;
-
+      width: 100%;
+      aspect-ratio: 16/9;
+			object-fit: cover;
       border-radius: 10px;
     }
     :hover .cover_tech {

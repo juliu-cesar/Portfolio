@@ -28,6 +28,7 @@ const StyledToggle = styled.button`
       left: calc(50% - 16px);
       width: 32px;
       height: 32px;
+      display: block;
       animation: sun 1.5s alternate infinite;
     }
     .stars {
@@ -37,7 +38,6 @@ const StyledToggle = styled.button`
       right: -11px;
       width: 9px;
       height: 9px;
-      display: none;
       animation: moon 5s alternate infinite;
     }
     .stars:nth-child(2) {
@@ -73,7 +73,6 @@ const StyledToggle = styled.button`
     .stars {
       display: block;
     }
-
     ::after {
       right: -2px;
     }
@@ -106,7 +105,7 @@ export default function ToggleTheme() {
   function toggle() {
     const icon = document.querySelector("#sun_moon") as HTMLElement;
 
-    if (colorContext.mode != "dark") {
+    if (colorContext.mode == "light") {
       icon.classList.remove("moon");
     } else {
       icon.classList.add("moon");
@@ -119,7 +118,7 @@ export default function ToggleTheme() {
         toggle();
       }}
     >
-      <span id="sun_moon" className="align_center">
+      <span id="sun_moon" className="align_center moon">
         <img className="sunRays" src="img/svg/sunRays.svg" />
         <img className="stars" src="img/svg/star.svg" />
         <img className="stars" src="img/svg/star.svg" />
