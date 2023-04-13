@@ -4,29 +4,30 @@ export const StyledCardSites = styled.div`
   width: 100%;
   .container_cardSite {
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template:
+      "gpuStore gpuStore vsCode"
+      "port form form"
+      / calc(50% - 15px) calc(5% - 15px) calc(45% - 30px);
     gap: 30px;
   }
   .card_site {
+    width: 100%;
     padding: 25px;
     justify-content: space-around;
     border-radius: 10px;
     backdrop-filter: blur(10px);
   }
   .card_site:nth-child(1) {
-    width: calc(58% - 16px);
+    grid-area: gpuStore;
     background-color: ${({ theme }) => theme.color1};
   }
   .card_site:nth-child(2) {
-    width: calc(42% - 15px);
+    grid-area: vsCode;
     background-color: ${({ theme }) => theme.bg_card_2};
   }
   .card_site:nth-child(3) {
-    width: calc(50% - 15px);
+    grid-area: port;
     background: linear-gradient(
       90deg,
       ${({ theme }) => theme.bg_card_3} 0%,
@@ -34,7 +35,7 @@ export const StyledCardSites = styled.div`
     );
   }
   .card_site:nth-child(4) {
-    width: calc(50% - 15px);
+    grid-area: form;
     background: linear-gradient(
       225deg,
       ${({ theme }) => theme.gradient_4} 0%,
@@ -189,7 +190,7 @@ export const StyledCardSites = styled.div`
         position: relative;
         svg {
           width: 45px;
-        }        
+        }
       }
     }
     .frame_text {
@@ -234,7 +235,7 @@ export const StyledCardSites = styled.div`
         svg {
           width: 40px;
         }
-        p{
+        p {
           width: 90px;
           font-size: 14px;
         }
@@ -248,6 +249,35 @@ export const StyledCardSites = styled.div`
         font-size: 14px;
         font-weight: 200;
       }
+    }
+  }
+  @media (max-width: 700px) {
+    .container_cardSite {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card_site {
+      max-width: 500px;
+      padding: 25px;
+    }
+    .frame_img {
+      height: 250px;
+    }
+  }
+  @media (max-width: 500px) {
+    .container_cardSite {
+      gap: 25px;
+      margin-top: 25px;
+    }
+    .card_site{
+      padding: 15px;
+    }
+  }
+  @media (max-width: 400px) {
+    .container_cardSite {
+      gap: 15px;
+      margin-top: 15px;
     }
   }
 `;

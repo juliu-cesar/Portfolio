@@ -24,6 +24,16 @@ const StyledContainerPrincipal = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  @media (max-width: 500px) {
+    padding: 25px;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 400px) {
+    padding: 15px;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 `;
 
 export default function ContainerPrincipal({

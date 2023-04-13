@@ -10,9 +10,11 @@ export default function HomePage() {
     <StyledHomePage>
       <ToggleTheme />
       <ContainerPrincipal>
-        <div className="frame_home">
-          <CardPrincipal />
-          <CardTechnologies />
+        <div className="Home">
+          <div className="frame_principalAndTech">
+            <CardPrincipal />
+            <CardTechnologies />
+          </div>
           <CardSites />
         </div>
 

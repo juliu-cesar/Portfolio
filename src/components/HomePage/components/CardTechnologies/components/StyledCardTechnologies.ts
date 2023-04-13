@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const StyledCardTechnologies = styled.div`
-  width: calc(30% - 15px);
+  width: 100%;
+  height: 100%;
   transition: width 0.2s ease-in-out;
   a {
     color: ${({ theme }) => theme.text_color};
   }
   .container_cardTechnologies {
     cursor: pointer;
-    min-height: 650px;
+    height: 100%;
     padding: 50px;
     border-radius: 20px;
     background-color: ${({ theme }) => theme.bg_card_1};
@@ -31,17 +32,17 @@ export const StyledCardTechnologies = styled.div`
       transition: stroke 0.2s;
     }
   }
-  h2 {
+  .titleTechnologies {
     font-size: 40px;
     font-weight: 500;
     line-height: 40px;
     margin-bottom: 20px;
   }
-  .frame_tech {
-    height: 480px;
+  .frame_technologies {
     justify-content: space-around;
+    gap: 15px;
   }
-  .item_tech {
+  .techItem {
     gap: 10px;
     svg {
       width: 65px;
@@ -71,16 +72,16 @@ export const StyledCardTechnologies = styled.div`
     .container_cardTechnologies {
       padding: 35px;
     }
-    h2 {
+    .titleTechnologies {
       font-size: 30px;
       font-weight: 500;
       margin-top: 15px;
       margin-bottom: 20px;
     }
-    .frame_tech {
+    .frame_technologies {
       height: 500px;
     }
-    .item_tech {
+    .techItem {
       svg {
         width: 55px;
         min-width: 55px;
@@ -96,7 +97,6 @@ export const StyledCardTechnologies = styled.div`
     }
   }
   @media (max-width: 1000px) {
-    width: calc(35% - 15px);
     .container_cardTechnologies {
       padding: 25px;
     }
@@ -107,15 +107,15 @@ export const StyledCardTechnologies = styled.div`
         width: 20px;
       }
     }
-    h2 {
+    .titleTechnologies {
       font-size: 27px;
       font-weight: 500;
       margin-bottom: 20px;
     }
-    .frame_tech {
+    .frame_technologies {
       height: 520px;
     }
-    .item_tech {
+    .techItem {
       svg {
         width: 45px;
         min-width: 45px;
@@ -131,21 +131,87 @@ export const StyledCardTechnologies = styled.div`
     }
   }
   @media (max-width: 800px) {
-    width: calc(38% - 15px);
-    .container_cardTechnologies {
-      min-height: 600px;
-    }
-    h2 {
+    .titleTechnologies {
       font-size: 27px;
       font-weight: 500;
       margin-bottom: 15px;
     }
-    .frame_tech {
+    .frame_technologies {
       height: 470px;
     }
     .dots {
       width: 45px;
       height: 20px;
+    }
+  }
+  @media (max-width: 700px) {
+    max-width: 500px;
+    margin: auto;
+    .container_cardTechnologies {
+      padding: 20px;
+    }
+    .titleTechnologies {
+      font-size: 32px;
+      margin-top: 0;
+    }
+    .frame_technologies {
+      height: 80%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      align-items: center;
+    }
+    .techItem {
+      svg {
+        width: 50px;
+        min-width: 50px;
+      }
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+    .dots {
+      display: none;
+    }
+  }
+  @media (max-width: 500px) {
+    .titleTechnologies {
+      font-size: 30px;
+    }
+    .techItem {
+      svg {
+        width: 40px;
+        min-width: 40px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .container_cardTechnologies {
+      padding: 15px;
+    }
+    .titleTechnologies {
+      font-size: 28px;
+    }
+    .frame_technologies {
+      gap: 12px;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+    }
+    .techItem {
+      width: 70%;
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+    .techItem:nth-child(even){
+      flex-direction: row-reverse;
     }
   }
 `;

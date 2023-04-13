@@ -14,13 +14,13 @@ export default function CardTechnologies() {
           <span className="expand_icon align_center">
             <Expand color="white"></Expand>
           </span>
-          <h2>Tecnologias</h2>
-          <div className="frame_tech flex_col">
+          <h2 className="titleTechnologies">Tecnologias</h2>
+          <div className="frame_technologies flex_col">
             {allTech.map((name, index) => {
               let tech =
                 TechnologiesList[name as keyof typeof TechnologiesList];
               return (
-                <div className="item_tech flex_row" key={index}>
+                <div className="techItem flex_row" key={index}>
                   {HTMLReactParser(tech.svg)}
                   <p className="">{tech.name}</p>
                 </div>

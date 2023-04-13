@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const StyledCardPrincipal = styled.div`
-  width: calc(70% - 15px);
+  width: 100%;
+  height: 100%;
   transition: width 0.2s ease-in-out;
   .container_cardPrincipal {
-    min-height: 650px;
+    height: 100%;
     padding: 50px;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +18,7 @@ export const StyledCardPrincipal = styled.div`
       ${({ theme }) => theme.gradient_3} 100%
     );
     backdrop-filter: blur(30px);
-    transition: color .2s;
+    transition: color 0.2s;
   }
   .Title_principal {
     h1 {
@@ -90,7 +91,9 @@ export const StyledCardPrincipal = styled.div`
     }
   }
   @media (max-width: 1000px) {
-    width: calc(65% - 15px);
+    .container_cardPrincipal {
+      padding: 40px;
+    }
     .Title_principal {
       h1 {
         font-size: 45px;
@@ -110,9 +113,7 @@ export const StyledCardPrincipal = styled.div`
     }
   }
   @media (max-width: 800px) {
-    width: calc(62% - 15px);
     .container_cardPrincipal {
-      min-height: 600px;
       padding: 30px;
     }
     .Title_principal {
@@ -135,6 +136,69 @@ export const StyledCardPrincipal = styled.div`
       p {
         font-size: 17px;
         font-weight: 200;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    min-height: 450px;
+  }
+  @media (max-width: 500px) {
+    .container_cardPrincipal {
+      padding: 20px;
+      gap: 20px;
+    }
+    .Title_principal {
+      h1 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+    .Name_principal {
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 200;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .container_cardPrincipal {
+      padding: 15px;
+    }
+    .Title_principal {
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .Name_principal {
+      h3 {
+        font-size: 22px;
+        line-height: 25px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 22px;
+      }
+    }
+    .Links_principal {
+      margin-top: 10px;
+      a {
+        width: 45px;
+        height: 45px;
       }
     }
   }
