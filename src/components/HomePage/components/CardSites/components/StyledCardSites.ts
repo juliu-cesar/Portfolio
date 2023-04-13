@@ -260,7 +260,7 @@ export const StyledCardSites = styled.div`
     .card_site {
       max-width: 500px;
       padding: 25px;
-    }
+    }    
     .frame_img {
       height: 250px;
     }
@@ -273,11 +273,40 @@ export const StyledCardSites = styled.div`
     .card_site{
       padding: 15px;
     }
+    .frame_img {
+      height: 220px;
+    }
   }
   @media (max-width: 400px) {
     .container_cardSite {
       gap: 15px;
       margin-top: 15px;
+    }
+    .frame_img {
+      height: 190px;
+    }
+    .frame_text {
+      h4 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 300;
+      }
+    }
+    .frame_links {
+      gap: 5px;
+      a {
+        min-width: 90px;
+        height: 35px;
+        font-size: 13px;
+        font-weight: 400;
+        gap: 5px;
+        border-radius: 18px;
+      }
+      a:nth-child(2) {
+        gap: 2px;
+      }
     }
   }
 `;
