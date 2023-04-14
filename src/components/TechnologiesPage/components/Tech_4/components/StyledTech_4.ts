@@ -8,7 +8,6 @@ export const StyledTech_4 = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap: 30px;
-
   .card:first-child {
     background: linear-gradient(
       35deg,
@@ -27,7 +26,6 @@ export const StyledTech_4 = styled.div`
     );
   }
 
-
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -38,10 +36,10 @@ export const StyledTech_4 = styled.div`
   }
   @media (max-width: 700px) {
     margin: 20px 0;
-    gap: 20px;    
+    gap: 20px;
   }
   @media (max-width: 500px) {
     margin: 15px 0;
-    gap: 15px;    
+    gap: 15px;
   }
 `;

@@ -53,7 +53,7 @@ export const StyledCardSites = styled.div`
       height: 100%;
       width: 100%;
       aspect-ratio: 16/9;
-			object-fit: cover;
+      object-fit: cover;
       border-radius: 10px;
     }
     :hover .cover_tech {
@@ -65,19 +65,17 @@ export const StyledCardSites = styled.div`
     top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 88%;
-    min-height: 150px;
-    padding: 25px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border-radius: 10px;
-    background-color: #70707070;
+    background-color: ${({ theme }) => theme.bg_card_3};
     backdrop-filter: blur(9px);
-    transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    transition: all 0.35s ease-in-out;
     .item_tech {
       position: relative;
       svg {
@@ -96,12 +94,12 @@ export const StyledCardSites = styled.div`
         opacity: 0;
         font-size: 16px;
         display: none;
-        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
         background-color: white;
         color: black;
         animation: fade 0.2s ease-in-out forwards;
-        animation-delay: 150ms;
+        animation-delay: 100ms;
         :after {
           content: "";
           position: absolute;
@@ -265,7 +263,7 @@ export const StyledCardSites = styled.div`
     .card_site {
       max-width: 500px;
       padding: 25px;
-    }    
+    }
     .frame_img {
       height: 250px;
     }
@@ -275,7 +273,7 @@ export const StyledCardSites = styled.div`
       gap: 25px;
       margin-top: 25px;
     }
-    .card_site{
+    .card_site {
       padding: 15px;
     }
     .frame_img {

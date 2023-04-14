@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledText = styled.p`
+const StyledTPText = styled.p`
   height: 100%;
   margin-left: 25px;
   display: flex;
@@ -34,6 +34,6 @@ const StyledText = styled.p`
   }
 `;
 
-export default function Text({ children }: { children: React.ReactNode }) {
-  return <StyledText>{children}</StyledText>;
+export default function TPText({ children }: { children: React.ReactNode }) {
+  return <StyledTPText>{children}</StyledTPText>;
 }

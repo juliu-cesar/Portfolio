@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledIconAndText = styled.div`
+const StyledTPIconAndText = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,10 +88,10 @@ const StyledIconAndText = styled.div`
   }
 `;
 
-export default function IconAndText({
+export default function TPIconAndText({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <StyledIconAndText>{children}</StyledIconAndText>;
+  return <StyledTPIconAndText>{children}</StyledTPIconAndText>;
 }

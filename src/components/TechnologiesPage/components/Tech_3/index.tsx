@@ -1,9 +1,9 @@
 import { StyledTech_3 } from "./components/StyledTech_3";
 import TechPage from "../../../../json/TechPage.json";
-import IconAndText from "../IconAndText";
-import Text from "../Text";
+import IconAndText from "../TPIconAndText";
+import Text from "../TPText";
 import HTMLReactParser from "html-react-parser";
-import CardTP from "../CardTP";
+import CardTP from "../TPCard";
 
 type techInfo = {
   name: string;

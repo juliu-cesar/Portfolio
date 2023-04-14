@@ -1,9 +1,9 @@
 import { StyledTech_4 } from "./components/StyledTech_4";
 import TechPage from "../../../../json/TechPage.json";
 import HTMLReactParser from "html-react-parser";
-import IconAndText from "../IconAndText";
-import Text from "../Text";
-import CardTP from "../CardTP";
+import IconAndText from "../TPIconAndText";
+import Text from "../TPText";
+import CardTP from "../TPCard";
 
 export default function Tech_4() {
   const techList = ["Bootstrap", "jQuery", "Redux"];

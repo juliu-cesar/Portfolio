@@ -21,6 +21,7 @@ export const StyledTech_3 = styled.div`
   }
   .card:nth-child(2){
     grid-area: mongoFire;
+    justify-content: space-around;
     background-color: ${({ theme }) => theme.bg_card_2};
   }
   .card:nth-child(3){

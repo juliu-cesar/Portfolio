@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledCardTP = styled.div`
+const StyledTPCard = styled.div`
   width: 100%;
   height: 100%;
   padding: 25px;
@@ -8,7 +8,7 @@ const StyledCardTP = styled.div`
   flex-direction: column;
   gap: 15px;
   border-radius: 20px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(15px);
   transition: color 0.2s;
   @media (max-width: 800px) {
     padding: 20px;
@@ -24,6 +24,6 @@ const StyledCardTP = styled.div`
   }
 `;
 
-export default function CardTP({ children }: { children: React.ReactNode }) {
-  return <StyledCardTP className="card">{children}</StyledCardTP>;
+export default function TPCard({ children }: { children: React.ReactNode }) {
+  return <StyledTPCard className="card">{children}</StyledTPCard>;
 }

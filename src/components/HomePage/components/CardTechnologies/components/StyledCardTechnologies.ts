@@ -210,7 +210,7 @@ export const StyledCardTechnologies = styled.div`
         font-weight: 300;
       }
     }
-    .techItem:nth-child(even){
+    .techItem:nth-child(even) {
       flex-direction: row-reverse;
     }
   }

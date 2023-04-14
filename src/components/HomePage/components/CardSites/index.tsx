@@ -4,18 +4,8 @@ import { Github, ExternalLink } from "lucide-react";
 import WebSites from "../../../../json/WebSites.json";
 import TechnologiesList from "../../../../json/TechnologiesList.json";
 
-type TWeb = {
-  src: string;
-  alt: string;
-  techs: string[];
-  title: string;
-  text: string;
-  linkGitHub: string;
-  linkSite: string;
-};
-
 export default function CardSites() {
-  const webSites: TWeb[] = WebSites.webSites;
+  const webSites = WebSites.webSites;
 
   return (
     <StyledCardSites>
@@ -26,7 +16,8 @@ export default function CardSites() {
               <div className="frame_img align_center">
                 <div className="cover_tech">
                   {site.techs.map((name, key) => {
-                    let tech = TechnologiesList[name as keyof typeof TechnologiesList]
+                    let tech =
+                      TechnologiesList[name as keyof typeof TechnologiesList];
                     return (
                       <div className="item_tech" key={key}>
                         {HTMLReactParser(tech.svg)}
