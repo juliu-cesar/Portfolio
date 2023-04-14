@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="https://user-images.githubusercontent.com/121033909/232160198-e127d984-721f-4a0d-bac3-3863b81bc037.png" height="500"/>
 
-First, run the development server:
+</div>
+
+## Design
+
+<img src="https://user-images.githubusercontent.com/121033909/232162538-68ecdab5-6984-4973-99b5-ddab88d62bb5.png" height="150" align="right" />
+
+Utilizei alguns sites de exemplo para criar um design onde cada card do site tivesse a aparência de um vidro fosco, e a imagem de fundo ficasse desfocada. Utilizei o Figma para fazer o layout base, e também as cores para o efeito de vidro, porem apenas durante a execução do projeto que pude fazer alguns ajustes que tornaram o resultado mais satisfatório.
+
+## Tecnologias utilizadas
+
+<ul list-style="none">
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="17" /> React</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="17" /> TypeScript</li>
+  <li><img src="https://user-images.githubusercontent.com/121033909/218092081-8feb03b4-7444-4018-a550-e704a77bc53f.svg" height="17" /> Next</li>
+  <li><img src="https://user-images.githubusercontent.com/121033909/218092677-03759c36-3450-4cdb-be27-24e892913862.png" height="17"/> Styled Components</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="17"/> Figma</li>
+  <li><img src="https://user-images.githubusercontent.com/121033909/232154892-371a4d9b-5dfe-4eee-a71c-323dec4fffe4.png" height="17"/> Framer motion</li>
+  <li><img src="https://user-images.githubusercontent.com/121033909/232154904-8fc1bf29-f0ef-4a65-b7a6-42a1fb27f6d7.png" height="17"/> Lucide</li>
+
+</ul>
+
+### Comandos utilizados para criar o projeto
+
+Na documentação do Next na parte do TypeScript, podemos encontrar o comando para criar uma projeto com React, Next e TypeScript disponibilizado pela Vercel.
+
+```bash
+npx create-next-app@latest --ts
+```
+
+#### Comandos para inciar o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
