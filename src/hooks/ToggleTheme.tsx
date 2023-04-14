@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { ColorContext } from "./ColorProvider";
 
@@ -28,7 +28,7 @@ const StyledToggle = styled.button`
       left: calc(50% - 16px);
       width: 32px;
       height: 32px;
-      display: block;
+      display: none;
       animation: sun 1.5s alternate infinite;
     }
     .stars {
@@ -58,7 +58,7 @@ const StyledToggle = styled.button`
       content: "";
       position: absolute;
       top: calc(50% - 9px);
-      right: -20px;
+      right: -2px;
       width: 14px;
       height: 14px;
       border-radius: 50%;
@@ -66,15 +66,15 @@ const StyledToggle = styled.button`
       transition: all 0.2s;
     }
   }
-  .moon {
+  .light {
     .sunRays {
-      display: none;
-    }
-    .stars {
       display: block;
     }
+    .stars {
+      display: none;
+    }
     ::after {
-      right: -2px;
+      right: -20px;
     }
   }
 
@@ -102,13 +102,17 @@ const StyledToggle = styled.button`
 export default function ToggleTheme() {
   const colorContext = useContext(ColorContext);
 
+  useEffect(() => {
+    if (colorContext.mode == "light") return;
+    const icon = document.querySelector("#sun_moon") as HTMLElement;
+    icon.classList.add("light");
+  }, []);
   function toggle() {
     const icon = document.querySelector("#sun_moon") as HTMLElement;
-
-    if (colorContext.mode == "light") {
-      icon.classList.remove("moon");
+    if (colorContext.mode != "light") {
+      icon.classList.remove("light");
     } else {
-      icon.classList.add("moon");
+      icon.classList.add("light");
     }
     colorContext.toggleMode();
   }
@@ -118,7 +122,7 @@ export default function ToggleTheme() {
         toggle();
       }}
     >
-      <span id="sun_moon" className="align_center moon">
+      <span id="sun_moon" className="align_center">
         <img className="sunRays" src="img/svg/sunRays.svg" />
         <img className="stars" src="img/svg/star.svg" />
         <img className="stars" src="img/svg/star.svg" />

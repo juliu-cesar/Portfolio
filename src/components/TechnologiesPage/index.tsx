@@ -10,7 +10,7 @@ import PageTransition from "@/layout/PageTransition";
 
 export default function TechnologiesPage() {
   return (
-    <PageTransition initial={+300}>
+    <PageTransition initial={+100}>
       <StyledTechnologiesPage>
         <ToggleTheme />
         <ContainerPrincipal>
@@ -21,15 +21,15 @@ export default function TechnologiesPage() {
             <Tech_3 />
             <Tech_4 />
           </div>
-        <span id="tech_shape_1" className="tech_shape">
-          <img src="img/svg/tech_shape1.svg" />
-        </span>
-        <span id="tech_shape_2" className="tech_shape">
-          <img src="img/svg/tech_shape2.svg" />
-        </span>
-        <span id="tech_shape_3" className="tech_shape">
-          <img src="img/svg/tech_shape3.svg" />
-        </span>
+          <span id="tech_shape_1" className="tech_shape">
+            <img src="img/svg/tech_shape1.svg" />
+          </span>
+          <span id="tech_shape_2" className="tech_shape">
+            <img src="img/svg/tech_shape2.svg" />
+          </span>
+          <span id="tech_shape_3" className="tech_shape">
+            <img src="img/svg/tech_shape3.svg" />
+          </span>
         </ContainerPrincipal>
       </StyledTechnologiesPage>
     </PageTransition>

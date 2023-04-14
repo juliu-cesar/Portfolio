@@ -14,6 +14,7 @@ export default function PageTransition({
       exit={{ x: 0, opacity: 0 }}
       transition={{
         type: "tween",
+        // duration: 2,
         stiffness: 260,
         damping: 20,
       }}

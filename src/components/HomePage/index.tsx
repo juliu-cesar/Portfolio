@@ -8,7 +8,7 @@ import PageTransition from "@/layout/PageTransition";
 
 export default function HomePage() {
   return (
-    <PageTransition initial={-300}>
+    <PageTransition initial={-100}>
       <StyledHomePage>
         <ToggleTheme />
         <ContainerPrincipal>
