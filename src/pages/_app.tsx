@@ -3,6 +3,7 @@ import { CSSReset } from "../styles/CSSReset";
 import { ThemeProvider } from "styled-components";
 import ColorProvider, { ColorContext } from "@/hooks/ColorProvider";
 import { useContext } from "react";
+import { AnimatePresence } from "framer-motion";
 
 const theme = {
   light: {
@@ -68,8 +69,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 export default function App(props: any) {
   return (
-    <ColorProvider initialValue="light">
-      <MyApp {...props} />
-    </ColorProvider>
+    <AnimatePresence
+      mode="wait"
+      initial={false}
+      onExitComplete={() => window.scrollTo(0, 0)}
+    >
+      <ColorProvider initialValue="light">
+        <MyApp {...props} />
+      </ColorProvider>
+    </AnimatePresence>
   );
 }
