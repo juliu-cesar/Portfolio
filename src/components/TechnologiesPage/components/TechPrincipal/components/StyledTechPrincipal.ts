@@ -10,7 +10,6 @@ export const StyledTechPrincipal = styled.div`
   gap: 30px;
   .card:first-child {
     background-color: ${({ theme }) => theme.color1};
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.18);
   }
   .card:nth-child(2) {
     background: linear-gradient(
@@ -38,6 +37,9 @@ export const StyledTechPrincipal = styled.div`
     margin: 20px 0;
     gap: 20px;
     grid-template-columns: 1fr;
+    .card:first-child {
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.18);
+    }
   }
   @media (max-width: 500px) {
     margin: 15px 0;

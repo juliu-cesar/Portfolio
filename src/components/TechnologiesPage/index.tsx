@@ -21,13 +21,13 @@ export default function TechnologiesPage() {
         </div>
 
       <span id="tech_shape_1" className="tech_shape">
-        <img src="img/svg/tech_Shape1.svg" />
+        <img src="img/svg/tech_shape1.svg" />
       </span>
       <span id="tech_shape_2" className="tech_shape">
-        <img src="img/svg/tech_Shape2.svg" />
+        <img src="img/svg/tech_shape2.svg" />
       </span>
       <span id="tech_shape_3" className="tech_shape">
-        <img src="img/svg/Shape3.svg" />
+        <img src="img/svg/tech_shape3.svg" />
       </span>
       </ContainerPrincipal>
     </StyledTechnologiesPage>
