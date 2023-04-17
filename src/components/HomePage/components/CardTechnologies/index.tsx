@@ -12,7 +12,7 @@ export default function CardTechnologies() {
       <Link href={"tecnologias"}>
         <div className="container_cardTechnologies">
           <span className="expand_icon align_center">
-            <Expand color="white"></Expand>
+            <Expand color="white"/>
           </span>
           <h2 className="titleTechnologies">Tecnologias</h2>
           <div className="frame_technologies flex_col">
