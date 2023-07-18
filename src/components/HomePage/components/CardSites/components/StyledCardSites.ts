@@ -16,7 +16,6 @@ export const StyledCardSites = styled.div`
     padding: 25px;
     justify-content: space-around;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
   }
   .card_site:nth-child(1) {
     grid-area: gpuStore;
@@ -24,24 +23,17 @@ export const StyledCardSites = styled.div`
   }
   .card_site:nth-child(2) {
     grid-area: vsCode;
+    backdrop-filter: blur(10px);
     background-color: ${({ theme }) => theme.bg_card_2};
   }
   .card_site:nth-child(3) {
     grid-area: port;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.bg_card_3} 0%,
-      ${({ theme }) => theme.gradient_5} 100%
-    );
+    backdrop-filter: blur(10px);
+    background-color: ${({ theme }) => theme.bg_card_1};
   }
   .card_site:nth-child(4) {
     grid-area: form;
-    background: linear-gradient(
-      225deg,
-      ${({ theme }) => theme.gradient_4} 0%,
-      ${({ theme }) => theme.gradient_5} 60%,
-      ${({ theme }) => theme.gradient_5} 100%
-    );
+    background-color: ${({ theme }) => theme.bg_card_3};
   }
   .frame_img {
     position: relative;
@@ -73,7 +65,7 @@ export const StyledCardSites = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: ${({ theme }) => theme.bg_card_3};
+    background-color: ${({ theme }) => theme.bg_card_2};
     backdrop-filter: blur(9px);
     transition: all 0.35s ease-in-out;
     .item_tech {

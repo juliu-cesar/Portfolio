@@ -12,27 +12,16 @@ export const StyledTechTrio = styled.div`
   gap: 30px;
   .card:first-child {
     grid-area: javascript;
-    background: linear-gradient(
-      35deg,
-      ${({ theme }) => theme.bg_card_1} 0%,
-      ${({ theme }) => theme.gradient_5} 100%
-    );
+    backdrop-filter: blur(15px);
+    background-color: ${({ theme }) => theme.gradient_2};
   }
   .card:nth-child(2) {
     grid-area: html;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.bg_card_1} 0%,
-      ${({ theme }) => theme.gradient_6} 100%
-    );
+    background-color: ${({ theme }) => theme.bg_card_5};
   }
   .card:nth-child(3) {
     grid-area: css;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.gradient_5} 0%,
-      ${({ theme }) => theme.gradient_6} 100%
-    );
+    background-color: ${({ theme }) => theme.bg_card_4};
   }
 
   @media (max-width: 800px) {

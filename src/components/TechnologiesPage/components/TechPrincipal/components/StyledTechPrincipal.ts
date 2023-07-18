@@ -12,21 +12,14 @@ export const StyledTechPrincipal = styled.div`
     background-color: ${({ theme }) => theme.color1};
   }
   .card:nth-child(2) {
-    background: linear-gradient(
-      55deg,
-      ${({ theme }) => theme.gradient_5} 0%,
-      ${({ theme }) => theme.gradient_4} 100%
-    );
+    backdrop-filter: blur(15px);
+    background-color: ${({ theme }) => theme.bg_card_1};    
   }
   .card:nth-child(3) {
-    background-color: ${({ theme }) => theme.bg_card_2};
+    background-color: ${({ theme }) => theme.bg_card_4};
   }
   .card:nth-child(4) {
-    background: linear-gradient(
-      55deg,
-      ${({ theme }) => theme.bg_card_3} 0%,
-      ${({ theme }) => theme.gradient_5} 100%
-    );
+    background-color: ${({ theme }) => theme.bg_card_3};
   }
 
   @media (max-width: 800px) {

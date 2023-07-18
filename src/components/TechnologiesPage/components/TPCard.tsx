@@ -8,7 +8,7 @@ const StyledTPCard = styled.div`
   flex-direction: column;
   gap: 15px;
   border-radius: 20px;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
   transition: color 0.2s;
   @media (max-width: 800px) {
     padding: 20px;

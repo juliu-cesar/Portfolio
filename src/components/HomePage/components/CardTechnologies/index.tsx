@@ -1,11 +1,11 @@
 import HTMLReactParser from "html-react-parser";
-import { StyledCardTechnologies } from "./components/StyledCardTechnologies";
 import { Expand } from "lucide-react";
-import TechnologiesList from "../../../../json/TechnologiesList.json";
 import Link from "next/link";
+import TechnologiesList from "../../../../json/TechnologiesList.json";
+import { StyledCardTechnologies } from "./components/StyledCardTechnologies";
 
 export default function CardTechnologies() {
-  const allTech = ["React", "TypeScript", "HTML5", "CSS3", "NextJS", "Node"];
+  const allTech = ["React", "TypeScript", "NextJS", "Java", "MySql", "SpringBoot"];
 
   return (
     <StyledCardTechnologies>

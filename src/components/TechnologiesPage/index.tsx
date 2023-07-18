@@ -7,6 +7,7 @@ import TechTrio from "./components/TechTrio";
 import Tech_3 from "./components/Tech_3";
 import Tech_4 from "./components/Tech_4";
 import PageTransition from "@/layout/PageTransition";
+import TechBack from "./components/TechBack";
 
 export default function TechnologiesPage() {
   return (
@@ -17,6 +18,7 @@ export default function TechnologiesPage() {
           <div className="frame_principal">
             <HeaderTechPage />
             <TechPrincipal />
+            <TechBack />
             <TechTrio />
             <Tech_3 />
             <Tech_4 />

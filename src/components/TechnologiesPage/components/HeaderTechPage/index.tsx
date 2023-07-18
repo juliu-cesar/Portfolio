@@ -13,7 +13,6 @@ const StyledHeaderTechPage = styled.header`
     border-radius: 20px;
     background-color: ${({ theme }) => theme.bg_card_1};
     color: ${({ theme }) => theme.text_color};
-    backdrop-filter: blur(10px);
     svg {
       height: 50px;
       width: 45px;
@@ -28,13 +27,8 @@ const StyledHeaderTechPage = styled.header`
     height: 80px;
     display: flex;
     align-items: center;
+    background-color: ${({ theme }) => theme.bg_card_1};
     border-radius: 20px;
-    background: linear-gradient(
-      65deg,
-      ${({ theme }) => theme.gradient_6} 0%,
-      ${({ theme }) => theme.gradient_7} 65%,
-      ${({ theme }) => theme.gradient_8} 100%
-    );
     backdrop-filter: blur(15px);
     h2 {
       margin-left: 40px;

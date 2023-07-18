@@ -9,21 +9,14 @@ export const StyledTech_4 = styled.div`
   align-items: center;
   gap: 30px;
   .card:first-child {
-    background: linear-gradient(
-      35deg,
-      ${({ theme }) => theme.gradient_6} 0%,
-      ${({ theme }) => theme.gradient_5} 100%
-    );
+    background-color: ${({ theme }) => theme.bg_card_4};
   }
   .card:nth-child(2) {
-    background-color: ${({ theme }) => theme.gradient_2};
+    background-color: ${({ theme }) => theme.bg_card_3};
   }
   .card:nth-child(3) {
-    background: linear-gradient(
-      140deg,
-      ${({ theme }) => theme.gradient_5} 0%,
-      ${({ theme }) => theme.gradient_6} 100%
-    );
+    backdrop-filter: blur(10px);
+    background-color: ${({ theme }) => theme.bg_card_2};
   }
 
   @media (max-width: 900px) {

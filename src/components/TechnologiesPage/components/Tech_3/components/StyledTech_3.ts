@@ -17,7 +17,7 @@ export const StyledTech_3 = styled.div`
   }
   .card:first-child {
     grid-area: node;
-    background: linear-gradient(35deg, ${({ theme }) => theme.gradient_6} 0%, ${({ theme }) => theme.gradient_5} 100%);
+    background-color: ${({ theme }) => theme.bg_card_1};
   }
   .card:nth-child(2){
     grid-area: mongoFire;
@@ -26,7 +26,7 @@ export const StyledTech_3 = styled.div`
   }
   .card:nth-child(3){
     grid-area: git;
-    background-color: ${({ theme }) => theme.gradient_5};
+    background-color: ${({ theme }) => theme.bg_card_3};
   }
 
   @media (max-width: 1300px) {
