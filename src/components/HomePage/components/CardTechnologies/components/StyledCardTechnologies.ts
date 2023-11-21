@@ -9,36 +9,34 @@ export const StyledCardTechnologies = styled.div`
   }
   .container_cardTechnologies {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    padding: 50px;
+    padding: 40px;
     border-radius: 20px;
     background-color: ${({ theme }) => theme.bg_card_1};
     backdrop-filter: blur(15px);
-    :hover .expand_icon svg {
-      stroke: ${({ theme }) => theme.inverted_color};
-    }
-  }
-  .expand_icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    border-radius: 50%;
-    background-color: #30303030;
-    svg {
-      stroke: ${({ theme }) => theme.text_color};
-      transition: stroke 0.2s;
-    }
+    overflow-y: hidden;
   }
   .titleTechnologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
     font-size: 40px;
     font-weight: 500;
     line-height: 40px;
     margin-bottom: 20px;
+    background-color: #30303020;
+    border-radius: 16px;
+    svg {
+      height: 50px;
+      width: 45px;
+    }
   }
   .frame_technologies {
+    height: 100%;
     justify-content: space-around;
     gap: 15px;
   }
@@ -55,31 +53,20 @@ export const StyledCardTechnologies = styled.div`
       font-weight: 400;
     }
   }
-  .dots {
-    width: 60px;
-    height: 30px;
-    margin-left: 25px;
-    display: block;
-    svg {
-      width: 100%;
-      height: 100%;
-      fill: ${({ theme }) => theme.text_color};
-      transition: fill 0.2s;
-    }
-  }
 
   @media (max-width: 1300px) {
     .container_cardTechnologies {
-      padding: 35px;
+      padding: 30px;
     }
     .titleTechnologies {
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 500;
-      margin-top: 15px;
       margin-bottom: 20px;
-    }
-    .frame_technologies {
-      height: 500px;
+      svg {
+        height: 45px;
+        min-width: 40px;
+        width: 40px;
+      }
     }
     .techItem {
       svg {
@@ -91,29 +78,20 @@ export const StyledCardTechnologies = styled.div`
         font-weight: 400;
       }
     }
-    .dots {
-      width: 55px;
-      height: 30px;
-    }
   }
   @media (max-width: 1000px) {
     .container_cardTechnologies {
       padding: 25px;
     }
-    .expand_icon {
-      width: 35px;
-      height: 35px;
-      svg {
-        width: 20px;
-      }
-    }
     .titleTechnologies {
-      font-size: 27px;
+      font-size: 26px;
       font-weight: 500;
       margin-bottom: 20px;
-    }
-    .frame_technologies {
-      height: 520px;
+      svg {
+        height: 40px;
+        min-width: 35px;
+        width: 35px;
+      }
     }
     .techItem {
       svg {
@@ -125,37 +103,38 @@ export const StyledCardTechnologies = styled.div`
         font-weight: 300;
       }
     }
-    .dots {
-      width: 50px;
-      height: 25px;
+  }
+  @media (max-width: 900px) {
+    .container_cardTechnologies {
+      padding: 20px;
+    }
+    .titleTechnologies {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      svg {
+        height: 40px;
+        min-width: 35px;
+        width: 35px;
+      }
     }
   }
   @media (max-width: 800px) {
     .titleTechnologies {
-      font-size: 27px;
+      font-size: 26px;
       font-weight: 500;
       margin-bottom: 15px;
     }
-    .frame_technologies {
-      height: 470px;
-    }
-    .dots {
-      width: 45px;
-      height: 20px;
-    }
   }
   @media (max-width: 700px) {
-    max-width: 500px;
     margin: auto;
     .container_cardTechnologies {
       padding: 20px;
     }
     .titleTechnologies {
       font-size: 32px;
-      margin-top: 0;
     }
     .frame_technologies {
-      height: 80%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
@@ -170,9 +149,6 @@ export const StyledCardTechnologies = styled.div`
         font-size: 24px;
         font-weight: 300;
       }
-    }
-    .dots {
-      display: none;
     }
   }
   @media (max-width: 500px) {
@@ -198,6 +174,7 @@ export const StyledCardTechnologies = styled.div`
       font-size: 28px;
     }
     .frame_technologies {
+      align-items: center;
       gap: 12px;
       grid-template-columns: 1fr;
       align-items: center;

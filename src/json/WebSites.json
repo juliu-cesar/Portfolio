@@ -35,6 +35,16 @@
       "text": "Formulário de cadastro para aluguel de cabanas.",
       "linkGitHub": "https://github.com/juliu-cesar/Form-Trip",
       "linkSite": "https://form-trip.vercel.app"
+    },
+    {
+      "src": "img/sites/stock-code.png",
+      "alt": "GitHub Stock Code",
+      "techs": ["Java", "SpringBoot", "MySql", "Docker"],
+      "title": "Stock Code",
+      "text": "API gerenciador de estoque.",
+      "linkGitHub": "https://github.com/juliu-cesar/StockCode_backend",
+      "linkSite": "https://github.com/juliu-cesar/StockCode_backend",
+      "noWebSite": true
     }
   ]
 }

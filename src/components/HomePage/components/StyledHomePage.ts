@@ -10,7 +10,7 @@ export const StyledHomePage = styled.main`
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: calc(70% - 15px) calc(30% - 15px);
+    grid-template-columns: calc(67% - 15px) calc(33% - 15px);
     grid-template-rows: 650px;
     align-items: center;
     gap: 30px;
@@ -62,7 +62,7 @@ export const StyledHomePage = styled.main`
   @media (max-width: 700px) {
     .frame_principalAndTech {
       grid-template-columns: 100%;
-      grid-template-rows: auto 320px;
+      grid-template-rows: auto 400px;
     }
     #shape_1 {
       width: 70%;
@@ -76,6 +76,8 @@ export const StyledHomePage = styled.main`
   }
   @media (max-width: 500px) {
     .frame_principalAndTech {
+      grid-template-columns: 100%;
+      grid-template-rows: auto 380px;
       gap: 25px;
     }
     #shape_1 {
@@ -94,7 +96,7 @@ export const StyledHomePage = styled.main`
     }
     .frame_principalAndTech {
       grid-template-columns: 100%;
-      grid-template-rows: auto 390px;
+      grid-template-rows: auto 430px;
     }
     #shape_1 {
       width: 90%;

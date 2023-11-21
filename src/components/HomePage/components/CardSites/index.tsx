@@ -40,9 +40,11 @@ export default function CardSites() {
                 <a href={site.linkGitHub} target="_blank" className="flex_row">
                   <Github color="white" width={20} /> Repositório
                 </a>
-                <a href={site.linkSite} target="_blank" className="flex_row">
-                  Ir para o site <ExternalLink color="black" width={20} />
-                </a>
+                {!site.noWebSite &&
+                  <a href={site.linkSite} target="_blank" className="flex_row">
+                    Ir para o site <ExternalLink color="black" width={20} />
+                  </a>
+                }
               </div>
             </div>
           );

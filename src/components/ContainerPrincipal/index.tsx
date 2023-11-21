@@ -16,11 +16,17 @@ const StyledContainerPrincipal = styled.div`
     margin-bottom: 40px;
   }
   @media (max-width: 1000px) {
+    padding: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     padding: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  @media (max-width: 800px) {
+    padding: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
   }

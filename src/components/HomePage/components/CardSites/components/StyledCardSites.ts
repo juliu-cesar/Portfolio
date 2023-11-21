@@ -8,6 +8,7 @@ export const StyledCardSites = styled.div`
     grid-template:
       "gpuStore gpuStore vsCode"
       "port form form"
+      "stock stock 1fr"
       / calc(50% - 15px) calc(5% - 15px) calc(45% - 30px);
     gap: 30px;
   }
@@ -28,12 +29,16 @@ export const StyledCardSites = styled.div`
   }
   .card_site:nth-child(3) {
     grid-area: port;
-    backdrop-filter: blur(10px);
     background-color: ${({ theme }) => theme.bg_card_1};
   }
   .card_site:nth-child(4) {
     grid-area: form;
     background-color: ${({ theme }) => theme.bg_card_3};
+  }
+  .card_site:nth-child(5) {
+    grid-area: stock;
+    backdrop-filter: blur(10px);
+    background-color: ${({ theme }) => theme.bg_card_1};
   }
   .frame_img {
     position: relative;
